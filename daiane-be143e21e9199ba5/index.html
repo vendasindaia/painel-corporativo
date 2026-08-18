@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="referrer" content="no-referrer">
+<title>Recovery · agosto</title>
+<style>
+:root{--paper:#F2F4F1;--card:#fff;--line:#DCE1DB;--soft:#EAEEE8;--ink:#13221F;--ink2:#4C5C57;--ink3:#7A8781;
+ --ac:#0D6E5E;--acs:#E1EFEA;--warn:#B0701C;--warns:#F8EEDC;--bad:#8E4643;--bads:#F5E5E3;--good:#3C7A4B;--goods:#E3EFE4;
+ --sh:0 1px 2px rgba(19,34,31,.06),0 4px 14px rgba(19,34,31,.05)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0E1D1B;--card:#152422;--line:#293A36;--soft:#1D2C29;
+ --ink:#E9F0EC;--ink2:#A4B4AE;--ink3:#78877F;--ac:#4FBFA6;--acs:#13302A;--warn:#D9A05B;--warns:#31261A;
+ --bad:#D08A85;--bads:#32201F;--good:#77C08A;--goods:#1A2D1F;--sh:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25)}}
+:root[data-theme="dark"]{--paper:#0E1D1B;--card:#152422;--line:#293A36;--soft:#1D2C29;--ink:#E9F0EC;--ink2:#A4B4AE;--ink3:#78877F;
+ --ac:#4FBFA6;--acs:#13302A;--warn:#D9A05B;--warns:#31261A;--bad:#D08A85;--bads:#32201F;--good:#77C08A;--goods:#1A2D1F;
+ --sh:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-text-size-adjust:100%}
+.wrap{max-width:980px;margin:0 auto;padding:28px 18px 90px}
+h1{font:600 27px/1.2 Georgia,"Times New Roman",serif;margin:0 0 4px;letter-spacing:-.015em}
+.sub{color:var(--ink3);font-size:13px;margin-bottom:22px}
+h2{font:600 19px/1.25 Georgia,serif;margin:44px 0 6px;letter-spacing:-.01em;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+h2 .tag{font:400 11.5px system-ui;color:var(--ink3);letter-spacing:.04em;text-transform:uppercase}
+h3{font:600 15px system-ui;margin:26px 0 8px}
+p{margin:8px 0;max-width:74ch}
+.lead{color:var(--ink2);font-size:14px;max-width:74ch;margin-bottom:14px}
+.vazio{color:var(--ink3);font-size:13.5px;font-style:italic}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:10px;margin:18px 0 6px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:13px 14px;box-shadow:var(--sh)}
+.kpi .k{font-size:11.5px;color:var(--ink3);text-transform:uppercase;letter-spacing:.05em}
+.kpi .v{font:600 22px/1.15 Georgia,serif;margin-top:5px;font-variant-numeric:tabular-nums}
+.kpi .d{font-size:12px;color:var(--ink2);margin-top:3px}
+.kpi.g .v{color:var(--good)}.kpi.w .v{color:var(--warn)}.kpi.b .v{color:var(--bad)}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:12px 0;border:1px solid var(--line);border-radius:10px;background:var(--card);box-shadow:var(--sh)}
+table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:640px}
+th{text-align:left;font:600 11.5px system-ui;text-transform:uppercase;letter-spacing:.05em;color:var(--ink3);padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap;background:var(--soft)}
+td{padding:9px 12px;border-bottom:1px solid var(--soft);vertical-align:top}
+tr:last-child td{border-bottom:0}
+tr.destaque td{background:var(--acs)}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+td.nome{font-weight:600;min-width:170px}
+td.gancho{color:var(--ink2);font-size:13px;min-width:300px;max-width:440px}
+.mini{font-size:11.5px;color:var(--ink3);display:block;font-weight:400}
+.mini.alerta{color:var(--bad)}
+.tel{font-family:ui-monospace,Consolas,monospace;font-size:12.5px;color:var(--ac);white-space:nowrap}
+.q{color:var(--ink2);font-style:italic;font-size:13px;border-left:2px solid var(--line);padding-left:11px;margin:8px 0}
+.quem{font-size:12.5px;color:var(--ink3)}
+.box{border-left:3px solid var(--line);background:var(--card);border-radius:0 10px 10px 0;padding:13px 16px;margin:14px 0;box-shadow:var(--sh)}
+.box.bad{border-left-color:var(--bad)}.box.good{border-left-color:var(--good)}.box.warn{border-left-color:var(--warn)}
+.box h4{margin:0 0 5px;font:600 14.5px system-ui}
+.box p{margin:5px 0;font-size:13.5px;color:var(--ink2)}
+ol.plano{margin:14px 0;padding-left:22px;max-width:74ch}
+ol.plano li{margin:9px 0;color:var(--ink2);font-size:14.2px}
+ol.plano li strong{color:var(--ink)}
+td.barra{width:45%}
+td.barra span{display:block;height:11px;border-radius:3px;background:var(--ac);min-width:3px}
+.foot{margin-top:44px;padding-top:16px;border-top:1px solid var(--line);color:var(--ink3);font-size:12px;max-width:74ch}
+#theme{position:fixed;top:10px;right:10px;font:inherit;font-size:12px;padding:4px 10px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--ink);cursor:pointer;opacity:.75}
+@media(max-width:620px){h1{font-size:23px}.wrap{padding:20px 13px 70px}}
+</style>
+</head>
+<body>
+<button id="theme" onclick="var r=document.documentElement;r.setAttribute('data-theme',r.getAttribute('data-theme')==='dark'?'light':'dark')">🌓</button>
+<div class="wrap">
+<h1>Recovery — agosto de 2026</h1>
+<p class="sub">Indaiá Eventos · atualizado em 18/08/2026, 12:12 · fonte: indachat (time Recovery)</p>
+
+<div class="kpis"><div class="kpi "><div class="k">Conversas vivas</div><div class="v">33</div><div class="d">clientes que falaram nos últimos 7 dias</div></div><div class="kpi w"><div class="k">Esperando resposta</div><div class="v">25</div><div class="d">22 há mais de 7 dias</div></div><div class="kpi b"><div class="k">Sem segunda tentativa</div><div class="v">781</div><div class="d">receberam uma mensagem só</div></div><div class="kpi g"><div class="k">Já responderam e esfriaram</div><div class="v">315</div><div class="d">o alvo mais barato</div></div></div>
+
+<h2>1 · Como está o atendimento <span class="tag">volume e velocidade</span></h2>
+  <div class="scroll"><table><thead><tr><th>Janela</th><th class="n">Conversas</th><th class="n">Msgs do cliente</th><th class="n">Respostas humanas</th><th class="n">Mediana de espera</th><th class="n">≤30 min</th><th class="n">&gt;24h</th></tr></thead><tbody><tr><td>Últimos 7 dias</td><td class="n">33</td><td class="n">255</td><td class="n">691</td><td class="n">22 min</td><td class="n">53%</td><td class="n">51</td></tr><tr><td>Últimos 30 dias</td><td class="n">281</td><td class="n">3139</td><td class="n">5407</td><td class="n">24 min</td><td class="n">54%</td><td class="n">159</td></tr></tbody></table></div>
+  <h3>Dia a dia da última semana</h3>
+  <div class="scroll"><table><thead><tr><th>Dia</th><th class="n">Entradas</th><th class="n">Respostas</th><th class="n">Conversas</th><th class="n">Mediana</th></tr></thead><tbody><tr><td>qua 12/08</td><td class="n">40</td><td class="n">158</td><td class="n">15</td><td class="n">12 min</td></tr><tr><td>qui 13/08</td><td class="n">89</td><td class="n">152</td><td class="n">8</td><td class="n">8 min</td></tr><tr><td>sex 14/08</td><td class="n">56</td><td class="n">189</td><td class="n">12</td><td class="n">20,1 h</td></tr><tr><td>sáb 15/08</td><td class="n">4</td><td class="n">0</td><td class="n">3</td><td class="n">—</td></tr><tr><td>dom 16/08</td><td class="n">0</td><td class="n">0</td><td class="n">0</td><td class="n">—</td></tr><tr><td>seg 17/08</td><td class="n">26</td><td class="n">107</td><td class="n">10</td><td class="n">45 min</td></tr><tr><td>ter 18/08</td><td class="n">1</td><td class="n">0</td><td class="n">1</td><td class="n">—</td></tr></tbody></table></div>
+  <h3>Por atendente — últimos 7 dias</h3>
+  <div class="scroll"><table><thead><tr><th>Pessoa</th><th class="n">Mensagens</th><th class="n">Conversas</th><th class="n">Mediana</th><th class="n">≤30 min</th></tr></thead><tbody><tr><td><strong>Daiane Bortoli</strong></td><td class="n">691</td><td class="n">186</td><td class="n">22 min</td><td class="n">53%</td></tr></tbody></table></div>
+  <div class="box warn">
+    <h4>O buraco de fim de semana</h4>
+    <p>Nos últimos 30 dias os clientes mandaram <strong>366 mensagens</strong> em sábados e domingos, em 81 conversas. A equipe respondeu <strong>28</strong> vezes.</p>
+    <p>Lead frio costuma reabrir a conversa no fim de semana, que é quando ele volta a pensar no evento. Resposta só na segunda desperdiça justamente o momento em que ele voltou.</p>
+  </div>
+<h2>2 · Abordagem <span class="tag">o que funciona e o que está furando</span></h2>
+    <h3>O que está certo e deve virar padrão</h3><div class="box good"><h4>Buscou quem decide e capturou o contato da mãe</h4>
+    <p>Descobriu que quem escrevia era a debutante e pediu o contato da mãe para seguir com quem bate o martelo, sem forçar a venda. É exatamente o que o Recovery precisa: achar o decisor.</p><p class="q">“Se quiser me passar o contato , eu   entro em contato,  e  dou seguimento direto com ela.”</p></div><div class="box good"><h4>Segurou o orçamento até ter o responsável</h4>
+    <p>A filha queria resolver sozinha, mas a atendente não abriu preço nem reunião antes de ter o contato do pai, Valter, que é quem decide e paga.</p><p class="q">“Como vamos conversar sobre orçamento e agendamento, vou precisar alinhar algumas coisas com seu pai.  Poderia me informar o contato dele por gentileza?”</p></div><div class="box good"><h4>Saída com elegância e porta aberta</h4>
+    <p>Quando a Chirlei avisou que fechou com outra casa, encerrou sem insistir e deixou o canal aberto para indicação e próximas famílias. Insistir em quem já fechou queima a base; ela não insistiu.</p><p class="q">“fico feliz que a família encontrou um espaço!  Se em algum momento precisarem de algo ou conhecerem outra família planejando um 15 anos, nós estamos à disposição!”</p></div>
+    <h3>O que está furando</h3><div class="box bad"><h4>1. Três áudios longos e cupom citado antes do fechamento</h4>
+    <p class="quem">Chirlei☺️ — <span class="tel">554797465206</span> — R$ 0</p>
+    <p class="q">“vamos aproveitar que você entrou pelo cupom do Dia da Deputante, que é essa ação exclusiva para ajudar vocês nesse início e garantir esse super desconto no final do orçamento”</p>
+    <p>Lead engajado (respondeu 'Ss') foi tratado com três áudios longos, que o cliente não lê, e a atendente citou cupom e desconto antes de qualquer fechamento. Dois dias depois fechou com outra casa. Áudio longo não é lido e desconto só entra na hora de fechar.</p></div><div class="box bad"><h4>2. Lead que já entregou data e decisor ficou 36 dias sem resposta</h4>
+    <p class="quem">Ge — <span class="tel">554796481481</span> — R$ 0</p>
+    <p class="q">“Gostaria de mais informações, tenho uma filha que faz 15 anos em março, o que vocês oferecem”</p>
+    <p>A mãe disse que a filha faz 15 anos em março e perguntou o que a casa oferece. Esse lead entrega data e quem decide, sai da régua automática e recebe resposta à mão. Ninguém respondeu em 36 dias.</p></div><div class="box bad"><h4>3. Áudio longo com debutante que está comparando preço agora</h4>
+    <p class="quem">Ana Julia — <span class="tel">554891978736</span> — R$ 0</p>
+    <p class="q">“[áudio] Ah, que legal, Júlia. É realmente muito importante nesse início fazer orçamentos, fazer uma pesquisa detalhada em vários lugares, mas como nós vamos abordar orçamento e reunião, eu preciso conversar diretamente com um dos responsáveis adultos.”</p>
+    <p>A cliente disse que está olhando preços e recebeu um áudio longo em vez de texto curto. Buscar o responsável adulto está certo, mas o formato afasta um lead ativo; a conversa morreu em 'Assim clr'.</p></div><div class="box bad"><h4>4. Pedido de base de valor devolvido com template e sem retorno</h4>
+    <p class="quem">Duda Silva — <span class="tel">554898280795</span> — R$ 0</p>
+    <p class="q">“Eu só queria ter uma base nos valores não vou me casar no momento. Obrigada”</p>
+    <p>A cliente pediu uma base de valores e avisou que não casa agora. Preço perguntado é preço respondido; veio pergunta de template e depois silêncio. Quem não casa agora é caso de capturar para a próxima temporada, não de sumir.</p></div><div class="box bad"><h4>5. Oferta insistida em quem já fechou, com mensagens em branco</h4>
+    <p class="quem">Grazi — <span class="tel">554788464209</span> — R$ 0</p>
+    <p class="q">“Meu esposo já fechou um horário com vcs”</p>
+    <p>A atendente disparou quatro mensagens vazias às 17:43 e seguiu oferecendo o Espaço Cristal até a cliente avisar que o marido já fechou. Insistir em quem já é cliente queima a base; era para confirmar a reserva no sistema, não vender de novo.</p></div><div class="box bad"><h4>6. Régua automática por quatro dias, nenhum humano, número errado</h4>
+    <p class="quem">Cintia Ghisi — <span class="tel">554898402825</span> — R$ 0</p>
+    <p class="q">“Esse é meu número pessoal. Se você deseja  informações de valores e agendamentos , gentileza chamar em nosso número comercial 48 999745025”</p>
+    <p>Foram dias só de mensagens automáticas, sem nenhum atendente humano, até a própria cliente avisar que era o número pessoal e pedir para chamarem no comercial. A régua rodou cega e ninguém percebeu o contato errado.</p></div>
+<h2>3 · O que está represado <span class="tag">estoque</span></h2>
+  <div class="kpis">
+    <div class="kpi b"><div class="k">Nunca falaram com humano</div><div class="v">25</div><div class="d">entre os tickets abertos da janela</div></div>
+    <div class="kpi w"><div class="k">Aguardando resposta</div><div class="v">25</div><div class="d">22 esperam há mais de 7 dias</div></div>
+    <div class="kpi "><div class="k">Na Triagem</div><div class="v">0</div><div class="d">de 1499 tickets abertos</div></div>
+    <div class="kpi "><div class="k">Em nutrição automática</div><div class="v">0</div><div class="d">não estão em atendimento</div></div>
+  </div>
+  <h3>Leads que chegaram e ainda não falaram com ninguém</h3>
+  <div class="scroll"><table><thead><tr><th>Espera</th><th>Nome</th><th>Telefone</th><th>O que já disse</th></tr></thead><tbody><tr><td class="n">36.1 d</td><td><strong>Seja sua melhor versão. ❤️</strong></td><td class="tel">554891871816</td><td class="gancho">Olá quero saber mais sobre Festa Tiny Fifteen IND-A141D425</td></tr><tr><td class="n">36.1 d</td><td><strong>Ingrid Santos</strong></td><td class="tel">554797133248</td><td class="gancho">Quero saber mais sobre o Wedding Promo do Indaiá! IND-A84D9E80</td></tr><tr><td class="n">36.1 d</td><td><strong>Ge</strong></td><td class="tel">554796481481</td><td class="gancho">Gostaria de mais informações, tenho uma filha que faz 15 anos em março, o que vocês oferecem</td></tr><tr><td class="n">36.1 d</td><td><strong>Larissa</strong></td><td class="tel">5519992424014</td><td class="gancho">Olá! Quero um orçamento para festa XV Anos. IND-5B4B5068</td></tr><tr><td class="n">26 d</td><td><strong>Dani Moraes</strong></td><td class="tel">554784956498</td><td class="gancho">Bom dia</td></tr><tr><td class="n">25.5 d</td><td><strong>.</strong></td><td class="tel">573232014278</td><td class="gancho">Ok</td></tr><tr><td class="n">— d</td><td><strong>.</strong></td><td class="tel">553232014278</td><td class="gancho">Olá quero saber mais sobre Festa Tiny Fifteen IND-9DD08D6F</td></tr><tr><td class="n">— d</td><td><strong>Julia Macedopio13</strong></td><td class="tel">554888514506</td><td class="gancho">15 Anos</td></tr><tr><td class="n">— d</td><td><strong>Eixo do valor</strong></td><td class="tel">554784832701</td><td class="gancho">Agradecemos sua mensagem. Não estamos disponíveis no momento, mas responderemos assim que possível.</td></tr><tr><td class="n">— d</td><td><strong>Cristianos Coelho Cabral</strong></td><td class="tel">554796916986</td><td class="gancho">[Áudio] [áudio] Ah, se fudê!</td></tr><tr><td class="n">— d</td><td><strong>JR</strong></td><td class="tel">554799223366</td><td class="gancho">Mandei por engano me desculpe</td></tr><tr><td class="n">— d</td><td><strong>Luana</strong></td><td class="tel">554797314901</td><td class="gancho">Olá, vim do instagram e gostaria de um orçamento,  IND-D573EEDC</td></tr><tr><td class="n">— d</td><td><strong>Samara 💜</strong></td><td class="tel">554899089355</td><td class="gancho">15 Anos</td></tr><tr><td class="n">— d</td><td><strong>Jamile</strong></td><td class="tel">554796398372</td><td class="gancho">Olá, vim pela Bio do Instagram e tenho interesse em saber mais sobre eventos de 15 anos</td></tr></tbody></table></div>
+  <h3>Pedidos de pé, com o cliente tendo falado por último</h3>
+  <div class="scroll"><table><thead><tr><th>Espera</th><th>Nome</th><th>Telefone</th><th>Última fala do cliente</th></tr></thead><tbody><tr><td class="n">44 d</td><td><strong>Vigando Lenschow</strong></td><td class="tel">554799891919</td><td class="gancho">Oi.paola.dejejo.um.feliz.domingo.pr.voce.tudo.de.bom. valeo</td></tr><tr><td class="n">43.1 d</td><td><strong>.</strong></td><td class="tel">554299616998</td><td class="gancho">Cancele</td></tr><tr><td class="n">43.1 d</td><td><strong>Isabel</strong></td><td class="tel">554896509121</td><td class="gancho">Não vou mais organizar casamento nenhum!</td></tr><tr><td class="n">42.9 d</td><td><strong>Isa🫶🏻</strong></td><td class="tel">554789099698</td><td class="gancho">Okk</td></tr><tr><td class="n">42.8 d</td><td><strong>Grazi</strong></td><td class="tel">554788464209</td><td class="gancho">Meu esposo já fechou um horário com vcs</td></tr><tr><td class="n">42.8 d</td><td><strong>Vitória Copelli</strong></td><td class="tel">554991018154</td><td class="gancho">Ah, eu moro em santa Cecília 🥹</td></tr><tr><td class="n">42.1 d</td><td><strong>Hadassa Silva</strong></td><td class="tel">554896957454</td><td class="gancho">Hadassa agradece seu contato.
+Como posso te ajudar?
+Deixe sua mensagem e assim que possível eu te retorno .
+
+(Não faço agendamentos por aqui)
+Favor consultar o WhatsApp do Salão Flow 👉🏽48984362709</td></tr><tr><td class="n">41.8 d</td><td><strong>Shirlei Schwartz</strong></td><td class="tel">554796647117</td><td class="gancho">Sim a gente terminou então não tem mais como</td></tr><tr><td class="n">40.9 d</td><td><strong>🌻Laura✨️</strong></td><td class="tel">554792718868</td><td class="gancho">Certo</td></tr><tr><td class="n">39.8 d</td><td><strong>Duda Silva</strong></td><td class="tel">554898280795</td><td class="gancho">Eu só queria ter uma base nos valores não vou me casar no momento. Obrigada</td></tr><tr><td class="n">39.1 d</td><td><strong>Chirlei☺️</strong></td><td class="tel">554797465206</td><td class="gancho">Ok</td></tr><tr><td class="n">37.6 d</td><td><strong>Cintia Ghisi</strong></td><td class="tel">554898402825</td><td class="gancho">Olá, tudo bem? Esse é meu número pessoal. Se você deseja  informações de valores e agendamentos , gentileza chamar em nosso número comercial 48 999745025
+
+Grata pela compreensão 🌸</td></tr><tr><td class="n">36.7 d</td><td><strong>Monique</strong></td><td class="tel">554796173689</td><td class="gancho">Agradeço seu contato, mas nao estou disponivel no momento.
+Dúvidas ou informações referentes ao Comercial, favor entrar em contato pelo telefone 47 3380 0800 ou  e-mail comercial.timbo@redeunifique.com.br</td></tr><tr><td class="n">36.1 d</td><td><strong>Ana Julia</strong></td><td class="tel">554891978736</td><td class="gancho">Assim clr</td></tr><tr><td class="n">36 d</td><td><strong>Raquel Teixeira</strong></td><td class="tel">554891876941</td><td class="gancho">Obrigada</td></tr><tr><td class="n">33.1 d</td><td><strong>Sabrina /AB Recuperadora</strong></td><td class="tel">554799610803</td><td class="gancho">JAB Recuperadora de Camin agradece seu contato. Como podemos ajudar?</td></tr></tbody></table></div>
+<h2>4 · O que ficou mudo <span class="tag">a segunda tentativa</span></h2>
+  <div class="kpis">
+    <div class="kpi "><div class="k">Conversas mudas</div><div class="v">1279</div><div class="d">nós falamos por último e não houve resposta</div></div>
+    <div class="kpi b"><div class="k">Sem segunda tentativa</div><div class="v">781</div><div class="d">receberam uma mensagem só</div></div>
+    <div class="kpi w"><div class="k">Paradas há mais de 7 dias</div><div class="v">1117</div><div class="d">a janela boa para voltar</div></div>
+    <div class="kpi g"><div class="k">Já responderam e esfriaram</div><div class="v">315</div><div class="d">o alvo mais barato que existe</div></div>
+  </div>
+  <div class="box good">
+    <h4>Por que este quadro é o que importa aqui</h4>
+    <p>Medido em 571 retomadas da casa: <strong>68% das conversas que ficaram mudas nunca receberam uma segunda mensagem</strong> — e quando ela vem, <strong>26% destravam</strong>. O intervalo também foi medido: voltar depois de 7 dias destrava 33%, enquanto cobrar no dia seguinte destrava 11%.</p>
+    <p>Por isso a lista abaixo é só de quem <strong>já respondeu alguma vez</strong> e depois calou. Essa pessoa não é lead frio: ela já demonstrou interesse e parou.</p>
+  </div>
+  <div class="scroll"><table><thead><tr><th>Parada há</th><th>Nome</th><th>Telefone</th><th class="n">Tentativas</th><th>Última coisa que mandamos</th></tr></thead><tbody><tr>
+      <td class="n">44.6 d</td>
+      <td class="nome">Nair.<span class="mini">Aguardando Contato</span></td>
+      <td class="tel">554791215181</td>
+      <td class="n">0</td>
+      <td class="gancho">Oi! Passando por aqui pra te deixar à vontade caso queira me enviar alguma dúvida ou informação.
+
+Hoje não estamos em expediente, mas na segunda-feira seguimos normalmente com o seu atendimento. Tudo </td></tr><tr>
+      <td class="n">44.6 d</td>
+      <td class="nome">Fátima Cláudio<span class="mini">Aguardando Contato</span></td>
+      <td class="tel">558897291097</td>
+      <td class="n">0</td>
+      <td class="gancho">Oi! Passando por aqui pra te deixar à vontade caso queira me enviar alguma dúvida ou informação.
+
+Hoje não estamos em expediente, mas na segunda-feira seguimos normalmente com o seu atendimento. Tudo </td></tr><tr>
+      <td class="n">43 d</td>
+      <td class="nome">Cezar Empreendimentos Textil<span class="mini">Aguardando Contato</span></td>
+      <td class="tel">554735159067</td>
+      <td class="n">2</td>
+      <td class="gancho"></td></tr><tr>
+      <td class="n">42.1 d</td>
+      <td class="nome">Maristela<span class="mini">Aguardando Contato</span></td>
+      <td class="tel">554797935422</td>
+      <td class="n">1</td>
+      <td class="gancho">Bom dia Maristela, nossa que situação difícil. Desejo melhoras para ele e força pra você...o que importa agora é ele estar bem. Fica tranquila, quando estiver  mais tranquilo por ai  retomamos o atend</td></tr><tr>
+      <td class="n">41.1 d</td>
+      <td class="nome">𓇼maju 𐙚<span class="mini">Aguardando Contato</span></td>
+      <td class="tel">554888785287</td>
+      <td class="n">3</td>
+      <td class="gancho">Então  Maria Julia, como nós vamos abordar orçamento e reunião, precisamos conversar diretamente com um dos responsáveis adultos. Poderia me informar o contato de um dos dois por gentileza?</td></tr><tr>
+      <td class="n">40.9 d</td>
+      <td class="nome">Kariana Ribeiro<span class="mini">Aguardando Contato</span></td>
+      <td class="tel">554991628915</td>
+      <td class="n">22</td>
+      <td class="gancho">Muito obrigada, ótima semana para vocês também!</td></tr><tr>
+      <td class="n">40.9 d</td>
+      <td class="nome">...<span class="mini">Aguardando Contato</span></td>
+      <td class="tel">554796832588</td>
+      <td class="n">2</td>
+      <td class="gancho">Não possuímos espaços na cidade de Brusque. 😊 O espaço mais próximo seria a nossa unidade de Itapema, que fica a cerca de 45 km e é muito procurada pelos casais, principalmente por proporcionar um ce</td></tr><tr>
+      <td class="n">40.1 d</td>
+      <td class="nome">Faby Köche<span class="mini">Aguardando Contato</span></td>
+      <td class="tel">554799149228</td>
+      <td class="n">1</td>
+      <td class="gancho">Bom dia, Faby! Super entendo e fico feliz que tenham tomado a decisão que faz mais sentido para a família hoje. Tenho certeza de que o dia da sua princesa será muito especial! Se os planos mudarem, nó</td></tr><tr>
+      <td class="n">39.7 d</td>
+      <td class="nome">alice kunietscki araujo<span class="mini">Aguardando Contato</span></td>
+      <td class="tel">554784235036</td>
+      <td class="n">3</td>
+      <td class="gancho">Oi, passando só para avisar que estamos encerrando o expediente por hoje. 
+
+Amanhã, no primeiro horário, retomo o ao seu atendimento para continuarmos a conversa. 
+Se quiser me enviando alguma informa</td></tr><tr>
+      <td class="n">39.1 d</td>
+      <td class="nome">Cristiane Schulz<span class="mini">Aguardando Contato</span></td>
+      <td class="tel">554792419954</td>
+      <td class="n">8</td>
+      <td class="gancho">Olá! Passando para lembrar que nossa condição especial está chegando ao fim. 
+
+Como vocês gostaram do espaço, queria garantir que aproveitassem esse valor antes do reajuste. Me avisa?</td></tr><tr>
+      <td class="n">39.1 d</td>
+      <td class="nome">Ana Cláudia<span class="mini">Aguardando Contato</span></td>
+      <td class="tel">554888091767</td>
+      <td class="n">4</td>
+      <td class="gancho">Oi! 😊
+Surgiu uma oportunidade de desconto que se encaixa no seu perfil de evento, mas preciso confirmar se você ainda está em fase de orçamento.
+
+Me confirma, por favor?
+
+▶️ Dar continuidade
+▶️ Pausa</td></tr><tr>
+      <td class="n">38.9 d</td>
+      <td class="nome">Rô Roecker<span class="mini">Aguardando Contato</span></td>
+      <td class="tel">554891515155</td>
+      <td class="n">6</td>
+      <td class="gancho">Você tem interesse em montar orçamento com o Indaiá, ouacabou clicando no link sem querer?</td></tr><tr>
+      <td class="n">37.7 d</td>
+      <td class="nome">Priscila<span class="mini">Aguardando Contato</span></td>
+      <td class="tel">554799104525</td>
+      <td class="n">2</td>
+      <td class="gancho">Oi! Passando por aqui pra te deixar à vontade caso queira me enviar alguma dúvida ou informação.
+
+Hoje não estamos em expediente, mas na segunda-feira seguimos normalmente com o seu atendimento. Tudo </td></tr><tr>
+      <td class="n">37.6 d</td>
+      <td class="nome">Vê<span class="mini">Sem pasta</span></td>
+      <td class="tel">554784611505</td>
+      <td class="n">2</td>
+      <td class="gancho">Oi! Passando por aqui pra te deixar à vontade caso queira me enviar alguma dúvida ou informação.
+
+Hoje não estamos em expediente, mas na segunda-feira seguimos normalmente com o seu atendimento. Tudo </td></tr><tr>
+      <td class="n">37.6 d</td>
+      <td class="nome">hihi💗<span class="mini">Aguardando Contato</span></td>
+      <td class="tel">5511952205075</td>
+      <td class="n">0</td>
+      <td class="gancho">Oi! Passando por aqui pra te deixar à vontade caso queira me enviar alguma dúvida ou informação.
+
+Hoje não estamos em expediente, mas na segunda-feira seguimos normalmente com o seu atendimento. Tudo </td></tr><tr>
+      <td class="n">37.6 d</td>
+      <td class="nome">Lecilma So'Ousa<span class="mini">Aguardando Contato</span></td>
+      <td class="tel">554799471674</td>
+      <td class="n">0</td>
+      <td class="gancho">Oi! Passando por aqui pra te deixar à vontade caso queira me enviar alguma dúvida ou informação.
+
+Hoje não estamos em expediente, mas na segunda-feira seguimos normalmente com o seu atendimento. Tudo </td></tr></tbody></table></div>
+<h2>5 · Conversas para tocar hoje <span class="tag">nome, telefone e o que falta</span></h2>
+  <h3>O cliente falou por último · 18</h3><div class="scroll"><table><thead><tr><th>Cliente</th><th>Telefone</th><th class="n">Parada há</th><th>Onde parou · o que falta</th></tr></thead><tbody><tr>
+    <td class="nome">Vigando Lenschow<span class="mini">Aguardando Contato</span></td>
+    <td class="tel">554799891919</td>
+    <td class="n">44 d<span class="mini">0 tentativas</span></td>
+    <td class="gancho">Mensagem única e desconexa há 44 dias, sem sinal de evento — dar um último toque perguntando se há festa e data; se não vier, descartar como engano.</td>
+  </tr><tr>
+    <td class="nome">.<span class="mini">Aguardando Contato</span></td>
+    <td class="tel">554299616998</td>
+    <td class="n">43.1 d<span class="mini">0 tentativas</span></td>
+    <td class="gancho">Respondeu 'Cancele' ao gatilho automático há 43 dias — não reabrir; marcar como perdido.</td>
+  </tr><tr>
+    <td class="nome">Isabel<span class="mini">Aguardando Contato</span></td>
+    <td class="tel">554896509121</td>
+    <td class="n">43.1 d<span class="mini">0 tentativas</span></td>
+    <td class="gancho">Disse que não vai mais organizar casamento — encerrar com elegância e guardar o contato para futuro.</td>
+  </tr><tr>
+    <td class="nome">Isa🫶🏻<span class="mini">Aguardando Contato</span></td>
+    <td class="tel">554789099698</td>
+    <td class="n">42.9 d<span class="mini">4 tentativas</span></td>
+    <td class="gancho">Debutante repassou o contato da mãe (47 98846-4209) — atendimento migrou para o número da mãe; conferir se é a mesma família da Grazi e seguir por lá.</td>
+  </tr><tr>
+    <td class="nome">Grazi<span class="mini">Aguardando Contato</span></td>
+    <td class="tel">554788464209</td>
+    <td class="n">42.8 d<span class="mini">13 tentativas</span></td>
+    <td class="gancho">Marido já fechou horário com o Indaiá — confirmar a reserva no sistema e parar de ofertar; é cliente, não lead frio.</td>
+  </tr><tr>
+    <td class="nome">Vitória Copelli<span class="mini">Aguardando Contato</span></td>
+    <td class="tel">554991018154</td>
+    <td class="n">42.8 d<span class="mini">8 tentativas</span></td>
+    <td class="gancho">Mora em Santa Cecília, fora das seis cidades atendidas — registrar cidade e encerrar por falta de cobertura.</td>
+  </tr><tr>
+    <td class="nome">Hadassa Silva<span class="mini">Aguardando Contato</span></td>
+    <td class="tel">554896957454</td>
+    <td class="n">42.1 d<span class="mini">0 tentativas</span></td>
+    <td class="gancho">Número responde com robô do Salão Flow — contato errado; descartar.</td>
+  </tr><tr>
+    <td class="nome">Shirlei Schwartz<span class="mini">Aguardando Contato</span></td>
+    <td class="tel">554796647117</td>
+    <td class="n">41.8 d<span class="mini">2 tentativas</span></td>
+    <td class="gancho">Terminou o namoro e não haverá casamento — já encerrado com elegância; guardar para futura temporada.</td>
+  </tr><tr>
+    <td class="nome">🌻Laura✨️<span class="mini">Aguardando Contato</span></td>
+    <td class="tel">554792718868</td>
+    <td class="n">40.9 d<span class="mini">7 tentativas</span></td>
+    <td class="gancho">Contato do pai Valter capturado há 40 dias e nunca acionado — chamar o Valter hoje para abrir orçamento e marcar reunião.</td>
+  </tr><tr>
+    <td class="nome">Duda Silva<span class="mini">Aguardando Contato</span></td>
+    <td class="tel">554898280795</td>
+    <td class="n">39.8 d<span class="mini">3 tentativas</span></td>
+    <td class="gancho">Pediu base de valores e disse que não casa agora, ficou sem resposta — mandar uma faixa de referência e capturar a informação para a próxima temporada.</td>
+  </tr><tr>
+    <td class="nome">Chirlei☺️<span class="mini">Aguardando Contato</span></td>
+    <td class="tel">554797465206</td>
+    <td class="n">39.1 d<span class="mini">27 tentativas</span></td>
+    <td class="gancho">Fechou com outra casa após três áudios longos — perdido e já encerrado; registrar o concorrente no cadastro.</td>
+  </tr><tr>
+    <td class="nome">Cintia Ghisi<span class="mini">Aguardando Contato</span></td>
+    <td class="tel">554898402825</td>
+    <td class="n">37.6 d<span class="mini">2 tentativas</span></td>
+    <td class="gancho">Só recebeu mensagens automáticas e redirecionou para o comercial 48 99974-5025 — refazer o contato pelo número certo com um humano.</td>
+  </tr><tr>
+    <td class="nome">Monique<span class="mini">Aguardando Contato</span></td>
+    <td class="tel">554796173689</td>
+    <td class="n">36.7 d<span class="mini">0 tentativas</span></td>
+    <td class="gancho">Número responde com robô corporativo (Unifique) — contato errado; descartar.</td>
+  </tr><tr>
+    <td class="nome">Seja sua melhor versão. ❤️<span class="mini">Aguardando Contato</span></td>
+    <td class="tel">554891871816</td>
+    <td class="n">36.1 d<span class="mini">0 tentativas</span></td>
+    <td class="gancho">Lead novo de Festa Tiny Fifteen sem nenhuma resposta há 36 dias — responder hoje e perguntar data e quem decide.</td>
+  </tr><tr>
+    <td class="nome">Ana Julia<span class="mini">Aguardando Contato</span></td>
+    <td class="tel">554891978736</td>
+    <td class="n">36.1 d<span class="mini">4 tentativas</span></td>
+    <td class="gancho">Debutante comparando preços; falta o contato de um responsável adulto — reabordar por texto pedindo o número dos pais.</td>
+  </tr><tr>
+    <td class="nome">Ingrid Santos<span class="mini">Aguardando Contato</span></td>
+    <td class="tel">554797133248</td>
+    <td class="n">36.1 d<span class="mini">0 tentativas</span></td>
+    <td class="gancho">Lead novo do Wedding Promo sem resposta há 36 dias — responder hoje e descobrir data e número de convidados.</td>
+  </tr><tr>
+    <td class="nome">Ge<span class="mini">Aguardando Contato</span></td>
+    <td class="tel">554796481481</td>
+    <td class="n">36.1 d<span class="mini">0 tentativas</span></td>
+    <td class="gancho">Lead novo com filha que faz 15 anos em março, sem nenhuma resposta há 36 dias — responder à mão hoje; já entregou data e decisor.</td>
+  </tr><tr>
+    <td class="nome">Larissa<span class="mini">Aguardando Contato</span></td>
+    <td class="tel">5519992424014</td>
+    <td class="n">36.1 d<span class="mini">0 tentativas</span></td>
+    <td class="gancho">Lead novo de XV Anos com DDD 19, fora de SC, sem resposta — responder hoje confirmando a cidade antes de avançar.</td>
+  </tr></tbody></table></div>
+  
+<h2>6 · O que eu faria hoje</h2>
+  <ol class="plano"><li><strong>Hoje, antes das 12h</strong> — Ge (47 99648-1481): responder à mão o lead que já entregou data (15 anos em março) e decisor, confirmar a cidade e puxar reunião.</li><li><strong>Hoje, antes das 12h</strong> — Responder os leads novos parados há 36 dias — Ingrid (Wedding Promo) e 'Seja sua melhor versão' (Tiny Fifteen) — perguntando data, número de convidados e quem decide.</li><li><strong>Hoje</strong> — Larissa (XV Anos, DDD 19): responder confirmando a cidade antes de avançar, já que aparenta estar fora de SC.</li><li><strong>Hoje</strong> — Laura (554792718868): acionar o pai, Valter, parado há 40 dias, para abrir orçamento e marcar reunião.</li><li><strong>Hoje</strong> — Grazi (554788464209): confirmar no sistema a reserva que o marido fechou, parar as ofertas e conferir se é a mesma família da Isa.</li><li><strong>Ainda hoje</strong> — Ana Julia (554891978736) e Cintia (comercial 48 99974-5025): reabordar por texto e por humano, sem áudio e sem régua automática.</li><li><strong>Fim do dia</strong> — Marcar como perdidos e encerrar com elegância: Isabel, Shirlei, Chirlei e o 'Cancele'; descartar contatos errados Hadassa (Salão Flow) e Monique (Unifique).</li></ol>
+
+<p class="foot">Gerado automaticamente em 18/08/2026, 12:12. Conversas: time Recovery  no indachat, 1499 tickets abertos e as mensagens dos últimos 45 dias. 
+<br><br><strong>Como ler os números.</strong> “Mediana de espera” conta do momento em que o cliente escreveu sem ter resposta até a primeira resposta de uma pessoa — resposta automática não para o relógio. “Conversas” só inclui aquelas em que o cliente falou, para a régua automática não inflar o número. Este painel é só de conversa: Ação Gerente e Recovery trabalham retomada atravessando todos os setores, e não existe filtro no CRM que isole a carteira deles sem inventar vínculo.
+</p>
+</div>
+</body>
+</html>
