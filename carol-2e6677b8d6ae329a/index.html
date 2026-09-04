@@ -57,6 +57,10 @@ ol.plano li strong{color:var(--ink)}
 td.barra{width:45%}
 td.barra span{display:block;height:11px;border-radius:3px;background:var(--ac);min-width:3px}
 .foot{margin-top:44px;padding-top:16px;border-top:1px solid var(--line);color:var(--ink3);font-size:12px;max-width:74ch}
+.botao-analise{display:flex;flex-direction:column;gap:2px;margin:18px 0 4px;padding:13px 17px;border:1px solid var(--ac);border-left-width:4px;border-radius:9px;background:var(--card);text-decoration:none;color:var(--ink)}
+.botao-analise strong{font-size:15px;color:var(--ac)}
+.botao-analise span{font-size:12.5px;color:var(--ink3)}
+.botao-analise:hover{background:var(--bg)}
 #theme{position:fixed;top:10px;right:10px;font:inherit;font-size:12px;padding:4px 10px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--ink);cursor:pointer;opacity:.75}
 @media(max-width:620px){h1{font-size:23px}.wrap{padding:20px 13px 70px}}
 </style>
@@ -65,68 +69,64 @@ td.barra span{display:block;height:11px;border-radius:3px;background:var(--ac);m
 <button id="theme" onclick="var r=document.documentElement;r.setAttribute('data-theme',r.getAttribute('data-theme')==='dark'?'light':'dark')">🌓</button>
 <div class="wrap">
 <h1>Ação Gerente — setembro de 2026</h1>
-<p class="sub">Indaiá Eventos · atualizado em 03/09/2026, 09:30 · fonte: indachat (time Vendas [AG])
+<p class="sub">Indaiá Eventos · atualizado em 04/09/2026, 09:30 · fonte: indachat (time Vendas [AG])
 <br><strong>Esta página é a carteira de Carol</strong>: só conversas atribuídas a ela, com movimento nos últimos 30 dias. O que está com outra pessoa ou parado há mais tempo não entra nas contas acima — o que dá para resgatar está na seção “Vale reativar”.</p>
 
-<div class="kpis"><div class="kpi "><div class="k">Conversas vivas</div><div class="v">52</div><div class="d">clientes que falaram nos últimos 7 dias</div></div><div class="kpi w"><div class="k">Esperando resposta</div><div class="v">6</div><div class="d">2 há mais de 7 dias</div></div><div class="kpi b"><div class="k">Sem segunda tentativa</div><div class="v">3</div><div class="d">receberam uma mensagem só</div></div><div class="kpi g"><div class="k">Já responderam e esfriaram</div><div class="v">9</div><div class="d">o alvo mais barato</div></div></div>
+
+
+<div class="kpis"><div class="kpi "><div class="k">Conversas vivas</div><div class="v">49</div><div class="d">clientes que falaram nos últimos 7 dias</div></div><div class="kpi w"><div class="k">Esperando resposta</div><div class="v">8</div><div class="d">3 há mais de 7 dias</div></div><div class="kpi b"><div class="k">Sem segunda tentativa</div><div class="v">1</div><div class="d">receberam uma mensagem só</div></div><div class="kpi g"><div class="k">Já responderam e esfriaram</div><div class="v">7</div><div class="d">o alvo mais barato</div></div></div>
 
 <h2>1 · Como está o atendimento <span class="tag">volume e velocidade</span></h2>
-  <div class="scroll"><table><thead><tr><th>Janela</th><th class="n">Conversas</th><th class="n">Msgs do cliente</th><th class="n">Respostas humanas</th><th class="n">Mediana de espera</th><th class="n">≤30 min</th><th class="n">&gt;24h</th></tr></thead><tbody><tr><td>Últimos 7 dias</td><td class="n">52</td><td class="n">669</td><td class="n">718</td><td class="n">3 min</td><td class="n">80%</td><td class="n">6</td></tr><tr><td>Últimos 30 dias</td><td class="n">153</td><td class="n">2884</td><td class="n">3384</td><td class="n">3 min</td><td class="n">78%</td><td class="n">51</td></tr></tbody></table></div>
+  <div class="scroll"><table><thead><tr><th>Janela</th><th class="n">Conversas</th><th class="n">Msgs do cliente</th><th class="n">Respostas humanas</th><th class="n">Mediana de espera</th><th class="n">≤30 min</th><th class="n">&gt;24h</th></tr></thead><tbody><tr><td>Últimos 7 dias</td><td class="n">49</td><td class="n">713</td><td class="n">757</td><td class="n">2 min</td><td class="n">82%</td><td class="n">6</td></tr><tr><td>Últimos 30 dias</td><td class="n">149</td><td class="n">2894</td><td class="n">3362</td><td class="n">3 min</td><td class="n">78%</td><td class="n">52</td></tr></tbody></table></div>
   <h3>Dia a dia da última semana</h3>
-  <div class="scroll"><table><thead><tr><th>Dia</th><th class="n">Entradas</th><th class="n">Respostas</th><th class="n">Conversas</th><th class="n">Mediana</th></tr></thead><tbody><tr><td>sex 28/08</td><td class="n">185</td><td class="n">189</td><td class="n">15</td><td class="n">2 min</td></tr><tr><td>sáb 29/08</td><td class="n">71</td><td class="n">55</td><td class="n">3</td><td class="n">3 min</td></tr><tr><td>dom 30/08</td><td class="n">10</td><td class="n">10</td><td class="n">4</td><td class="n">1 min</td></tr><tr><td>seg 31/08</td><td class="n">192</td><td class="n">186</td><td class="n">14</td><td class="n">3 min</td></tr><tr><td>ter 01/09</td><td class="n">76</td><td class="n">88</td><td class="n">15</td><td class="n">5 min</td></tr><tr><td>qua 02/09</td><td class="n">79</td><td class="n">87</td><td class="n">15</td><td class="n">2 min</td></tr><tr><td>qui 03/09</td><td class="n">6</td><td class="n">19</td><td class="n">1</td><td class="n">2 min</td></tr></tbody></table></div>
+  <div class="scroll"><table><thead><tr><th>Dia</th><th class="n">Entradas</th><th class="n">Respostas</th><th class="n">Conversas</th><th class="n">Mediana</th></tr></thead><tbody><tr><td>sáb 29/08</td><td class="n">71</td><td class="n">55</td><td class="n">3</td><td class="n">3 min</td></tr><tr><td>dom 30/08</td><td class="n">10</td><td class="n">10</td><td class="n">4</td><td class="n">1 min</td></tr><tr><td>seg 31/08</td><td class="n">192</td><td class="n">186</td><td class="n">14</td><td class="n">3 min</td></tr><tr><td>ter 01/09</td><td class="n">76</td><td class="n">88</td><td class="n">15</td><td class="n">5 min</td></tr><tr><td>qua 02/09</td><td class="n">79</td><td class="n">87</td><td class="n">15</td><td class="n">2 min</td></tr><tr><td>qui 03/09</td><td class="n">75</td><td class="n">129</td><td class="n">16</td><td class="n">2 min</td></tr><tr><td>sex 04/09</td><td class="n">29</td><td class="n">23</td><td class="n">4</td><td class="n">4,0 h</td></tr></tbody></table></div>
   <h3>Seu atendimento — últimos 7 dias</h3>
-  <div class="scroll"><table><thead><tr><th>Pessoa</th><th class="n">Mensagens</th><th class="n">Conversas</th><th class="n">Mediana</th><th class="n">≤30 min</th></tr></thead><tbody><tr><td><strong>Carolina</strong></td><td class="n">718</td><td class="n">79</td><td class="n">3 min</td><td class="n">80%</td></tr></tbody></table></div>
+  <div class="scroll"><table><thead><tr><th>Pessoa</th><th class="n">Mensagens</th><th class="n">Conversas</th><th class="n">Mediana</th><th class="n">≤30 min</th></tr></thead><tbody><tr><td><strong>Carolina</strong></td><td class="n">757</td><td class="n">74</td><td class="n">2 min</td><td class="n">82%</td></tr></tbody></table></div>
   
 <h2>2 · Abordagem <span class="tag">o que funciona e o que está furando</span></h2>
-    <h3>O que está certo e deve virar padrão</h3><div class="box good"><h4>Reunião online oferecida com todas as letras</h4>
-    <p>Com a Daniele, em vez de despejar informação, Carol propôs a reunião online por escrito. É a maior alavanca medida da retomada: 48% viram reunião, contra 4% quando só se fala em visita. Repetir essa frase em toda segunda tentativa.</p><p class="q">“O que vocÊ acha de marcar uma reunião online assim consigo explicar melhor para você todos os espaços e serviços!?”</p></div><div class="box good"><h4>Pergunta direta que arranca a objeção real</h4>
-    <p>A pergunta do 'o que faltou' fez a Eloá abrir a proposta concorrente de R$ 35 mil em detalhe e fez a Flavia confessar a dúvida sobre o Mediterrâneo. Sem ela, esses dois leads teriam sumido calados. Objeção na mesa é objeção que dá pra trabalhar.</p><p class="q">“Queria te fazer uma pergunta só, e pode ser sincera comigo: o que faltou para vocês darem o sim?”</p></div><div class="box good"><h4>Segunda tentativa na janela certa destravou data de fechamento</h4>
-    <p>Com a Yellen, a mensagem de quase-encerramento veio 6 dias depois do silêncio e arrancou o compromisso: 'quando eu retornar de viajem eu vou fechar com vcs!'. É o padrão medido: segunda mensagem com espaçamento destrava, cobrança no dia seguinte não.</p><p class="q">“Antes de encerrar de vez por aqui, separei uma condição de fechamento de mês que talvez faça sentido pra vocês, mas nada obrigatório, só não queria deixar de te contar.”</p></div>
-    <h3>O que está furando</h3><div class="box bad"><h4>1. Concorrente de R$ 35 mil na mesa respondido com áudio longo</h4>
-    <p class="quem">Eloá Sifuentes — <span class="tel">554498424461</span> — R$ 0</p>
-    <p class="q">“[áudio] Oi Eloá, tudo certo? Eloá, obrigada pelo retorno, né? Com certeza essa parte de achar outros lugares, procurar outros lugares é super compreensível, né?”</p>
-    <p>A cliente escreve tudo por texto e recebeu dois áudios longos. Ontem às 20h45 ela detalhou a proposta concorrente item por item — está decidindo agora. A resposta de hoje tem que ser escrita, com comparativo direto e convite de reunião online, não outro áudio.</p></div><div class="box bad"><h4>2. Cliente entregou a data da decisão e ninguém cobrou depois</h4>
-    <p class="quem">Nicoli Glembowski — <span class="tel">554788681896</span> — R$ 0</p>
-    <p class="q">“Vou analisar com o rafa esse final de semana”</p>
-    <p>Ela avisou em 27/08 que decidiria com o Rafa no fim de semana. O fim de semana passou, hoje é quinta e nenhuma mensagem foi enviada. Lead que entrega data de decisão sai da régua e recebe cobrança à mão na segunda-feira. O Rafa é o decisor e nunca entrou na conversa.</p></div><div class="box bad"><h4>3. Reunião cancelada nunca foi reagendada</h4>
+    <h3>O que está certo e deve virar padrão</h3><div class="box good"><h4>Mensagem de quebra de silêncio arrancou data e compromisso de fechamento (Yellen)</h4>
+    <p>Depois de 6 dias de silêncio, a segunda tentativa bem construída fez a cliente cravar por escrito que fecha na volta da viagem. É exatamente a alavanca medida: segunda mensagem destrava 26% das conversas mudas.</p><p class="q">“Oi Yellen, tudo bem? 
+Antes de encerrar de vez por aqui, separei uma condição de fechamento de mês que talvez faça sentido pra vocês, mas nada obrigatório, só não queria deixar de te contar.”</p></div><div class="box good"><h4>Pergunta direta pelo motivo do não destravou a verdade (Thamara)</h4>
+    <p>Em vez de cobrar proposta, perguntou o que faltou. A cliente respondeu na hora com o motivo real (saúde na família), o que tirou a conversa da cobrança e preservou o lead.</p><p class="q">“Fiquei com vocês na cabeça desde a consultoria. Queria te fazer uma pergunta só, e pode ser sincera comigo: o que faltou para vocês darem o sim?”</p></div><div class="box good"><h4>Decisor e prazo mapeados antes de empurrar proposta (CrushCookies)</h4>
+    <p>Preço pedido às 12:14, proposta enviada às 12:20 — na mesma conversa, como manda a regra. E já identificou quem bate o martelo (a mãe) e quando (visita de sábado).</p><p class="q">“Talvez trazer a família que vai dar nessa parte decisória pra juntos, né? A gente fazer uma reunião e ver qual é que fica a melhor parte de pagamento pra todo mundo.”</p></div>
+    <h3>O que está furando</h3><div class="box bad"><h4>1. Objeção de R$ 8,5 mil respondida com parede de texto em vez de reunião</h4>
+    <p class="quem">Emily — <span class="tel">554797411586</span> — R$ 48.498,82</p>
+    <p class="q">“Sim temos a rolha de chopp de 700,00 reais e é um serviço bem completo. Você imaginou que levaria mais que 50 litros?”</p>
+    <p>A cliente abriu o orçamento por escrito (R$ 40 mil contra R$ 48.498,82) em 31/08. A resposta foi uma sequência de mensagens explicando rolha, taxas e flores. A reunião online só foi oferecida em 03/09 — a cliente declinou na mesma noite. O objetivo é reunião, não tirar dúvida por texto.</p></div><div class="box bad"><h4>2. Três áudios seguidos e promessa sem prazo para cliente fechando esta semana</h4>
+    <p class="quem">Maitê — <span class="tel">555182283139</span> — R$ 0</p>
+    <p class="q">“Diexa eu verificar se conseguimos essa semana te mostrar o espaço. Vou precisar ver com o nosso engenheiro..”</p>
+    <p>Evento em 03-04/10, cliente visitou 5 ou 6 concorrentes nos últimos dias e reclamou de preço e bebida por texto. Recebeu três áudios longos de manhã e uma promessa de visita sem dia nem hora. Ela já respondeu 'Relaxa Carol' — está desistindo educadamente.</p></div><div class="box bad"><h4>3. Negociação de forma de pagamento abandonada há 9 dias, com promessa furada no meio</h4>
+    <p class="quem">Isadora Martendal — <span class="tel">554797918010</span> — R$ 0</p>
+    <p class="q">“Alias deixa eu ver o que o pagamento parcelado libera de entrada, só um instante.”</p>
+    <p>Cliente no fundo do funil, aceitando parcela. Recebeu mensagens à 1h da manhã, um 'só um instante' que virou 11 horas e uma proposta que subiu de valor no meio da conversa. Depois do follow de 26/08, silêncio. Promessa de retorno tem que ser cumprida no prazo dito.</p></div><div class="box bad"><h4>4. Visita cancelada por emergência e nenhuma remarcação em 13 dias</h4>
     <p class="quem">Eliza Coelho — <span class="tel">554791663977</span> — R$ 0</p>
     <p class="q">“Boa tarde desculpa a demora, sem problemas, espero que ele melhore!!”</p>
-    <p>Cliente que marcou reunião duas vezes — intenção alta. Cancelou em 22/08 pelo filho doente, a resposta não terminou com pergunta nem deixou porta de reagendamento, e a conversa está muda há 12 dias. Estamos na janela boa da segunda tentativa (33% destravam depois de 7 dias).</p></div><div class="box bad"><h4>4. Percentual de desconto e cupom revelados antes do fechamento</h4>
-    <p class="quem">Nana Gitti — <span class="tel">554891430777</span> — R$ 0</p>
-    <p class="q">“Legal Nana, estamos conseguindo 50% na locação do espaço  nesse final de mês para clientes que escolheram a decoração Colors, e lembrei de vocês porque se encaixa.”</p>
-    <p>Regra da casa quebrada duas vezes na mesma tarde: 50% dito com todas as letras e depois 'aplicando todos os cupons'. A margem de negociação foi queimada antes de falar com quem decide — o pai da aniversariante — e ninguém perguntou quando ele bate o martelo.</p></div><div class="box bad"><h4>5. Prometeu segurar o contato e sumiu por 20 dias</h4>
+    <p>A cliente remarcou duas vezes por iniciativa própria — interesse real. No cancelamento de 22/08, a resposta não terminou com pergunta nem propôs nova data, e a conversa morreu. É o padrão dos 68% que nunca recebem a segunda mensagem.</p></div><div class="box bad"><h4>5. Cupom citado antes do fechamento e conversa encerrada sem pergunta</h4>
+    <p class="quem">Pri Costa — <span class="tel">554891357030</span> — R$ 0</p>
+    <p class="q">“combinado Pri, consigo manter por alguns dias para vocês esse cupom.”</p>
+    <p>Regra da casa: nunca citar cupom antes do fechamento. Além disso, a conversa terminou com a bola na mão da cliente ('eu falo com vc'), sem pergunta e sem data de retorno combinada.</p></div><div class="box bad"><h4>6. Prometeu segurar o contato e ficou muda 22 dias</h4>
     <p class="quem">Kathelen Martello — <span class="tel">554999715726</span> — R$ 0</p>
     <p class="q">“não quero perder esse contato contigo, vou tentar segurar nossa conversa ao máximo”</p>
-    <p>A promessa foi feita em 13/08 e nenhuma segunda mensagem veio desde então. É exatamente o padrão dos 68%: conversa muda que nunca recebe a segunda tentativa — e quando ela vem, 26% destravam. A cliente está orçando em Lages; cada semana calada joga a favor do concorrente.</p></div><div class="box bad"><h4>6. Preço perguntado, preço adiado</h4>
-    <p class="quem">Liliane Dantas — <span class="tel">5547933858089</span> — R$ 0</p>
-    <p class="q">“O sábado tem diferença em relação a valores Lili, ficaria acima do que te passei, mas podemos verificar sim!”</p>
-    <p>A cliente perguntou o valor do sábado e recebeu 'ficaria acima' sem número. Preço perguntado é preço respondido na mesma mensagem — o valor só chegou horas depois, dentro de um anexo. Está muda desde 24/08; a segunda tentativa de hoje deve trazer o número por escrito.</p></div>
+    <p>A cliente avisou que ia comparar com orçamento em Lages — momento clássico de Ação Gerente. A promessa de manter a conversa viva não virou nenhuma mensagem desde 13/08. A janela boa (mais de 7 dias, 33% de destrava) já passou faz duas semanas.</p></div>
 <h2>3 · O que está represado <span class="tag">estoque</span></h2>
   <div class="kpis">
     <div class="kpi b"><div class="k">Nunca falaram com humano</div><div class="v">0</div><div class="d">entre os tickets abertos da janela</div></div>
-    <div class="kpi w"><div class="k">Aguardando resposta</div><div class="v">6</div><div class="d">2 esperam há mais de 7 dias</div></div>
-    <div class="kpi "><div class="k">Na Triagem</div><div class="v">0</div><div class="d">de 199 tickets abertos</div></div>
+    <div class="kpi w"><div class="k">Aguardando resposta</div><div class="v">8</div><div class="d">3 esperam há mais de 7 dias</div></div>
+    <div class="kpi "><div class="k">Na Triagem</div><div class="v">0</div><div class="d">de 191 tickets abertos</div></div>
     <div class="kpi "><div class="k">Em nutrição automática</div><div class="v">0</div><div class="d">não estão em atendimento</div></div>
   </div>
   <h3>Leads que chegaram e ainda não falaram com ninguém</h3>
   <p class="vazio">Nada aqui hoje.</p>
   <h3>Pedidos de pé, com o cliente tendo falado por último</h3>
-  <div class="scroll"><table><thead><tr><th>Espera</th><th>Nome</th><th>Telefone</th><th>Última fala do cliente</th></tr></thead><tbody><tr><td class="n">20.7 d</td><td><strong>Kathelen Martello</strong></td><td class="tel">554999715726</td><td class="gancho">Obrigada 🙏🏻</td></tr><tr><td class="n">8.7 d</td><td><strong>Mileyde Peron</strong></td><td class="tel">554792571151</td><td class="gancho">Sim rs</td></tr><tr><td class="n">6.9 d</td><td><strong>Yellen lizzia</strong></td><td class="tel">554891704679</td><td class="gancho">Perfeito eu chego sab dia 05</td></tr><tr><td class="n">6.9 d</td><td><strong>Nicoli Glembowski</strong></td><td class="tel">554788681896</td><td class="gancho">Muito bonito mesmo 
-Vou analisar com o rafa esse final de semana 
-Por que essa semana está meio corrido de conversarmos por que ele tá cobrindo um funcionário que pegou férias</td></tr><tr><td class="n">1.9 d</td><td><strong>Li</strong></td><td class="tel">5547996168192</td><td class="gancho">Te agradeço</td></tr><tr><td class="n">0.7 d</td><td><strong>Eloá Sifuentes</strong></td><td class="tel">554498424461</td><td class="gancho">Sim, chegou a 35 mil
-Até 75 convidados 
-Com finger foods (várias opções no cardápio)
-Com água, refrigerante, suco, chopp, caipirinhas e drinks de gim 
-Uma parte de decoração inclusa
-Bolo e 450 doces inclusos 
-Dj por 3horas incluso
-Em frente</td></tr></tbody></table></div>
+  <div class="scroll"><table><thead><tr><th>Espera</th><th>Nome</th><th>Telefone</th><th>Última fala do cliente</th></tr></thead><tbody><tr><td class="n">21.7 d</td><td><strong>Kathelen Martello</strong></td><td class="tel">554999715726</td><td class="gancho">Obrigada 🙏🏻</td></tr><tr><td class="n">9.7 d</td><td><strong>Mileyde Peron</strong></td><td class="tel">554792571151</td><td class="gancho">Sim rs</td></tr><tr><td class="n">7.9 d</td><td><strong>Yellen lizzia</strong></td><td class="tel">554891704679</td><td class="gancho">Perfeito eu chego sab dia 05</td></tr><tr><td class="n">0.7 d</td><td><strong>Pri Costa 🏃🏻‍♀️🩷</strong></td><td class="tel">554891357030</td><td class="gancho">Obrigada</td></tr><tr><td class="n">0.6 d</td><td><strong>Carla Marcos Soares</strong></td><td class="tel">554799676567</td><td class="gancho">[Áudio] [áudio] Oi, Carol, boa tarde. Então, eu na realidade não sei nem por onde começar, mas assim, vou te fazer um, vou te dar um feedback aí, não sei qual é realmente o público que vocês atingem, mas eu confesso que eu já não gostei da </td></tr><tr><td class="n">0.6 d</td><td><strong>Emily</strong></td><td class="tel">554797411586</td><td class="gancho">Oie, boa tarde! Verificamos sim. Infelizmente, por hora, vamos precisar declinar das propostas.
+
+Acreditamos que seria muito difícil chegarmos à proposta que buscamos sem precisar abrir mão de pontos que, para nós, são essenciais. Por isso,</td></tr><tr><td class="n">0 d</td><td><strong>💞</strong></td><td class="tel">555182283139</td><td class="gancho">Não te estressa</td></tr><tr><td class="n">0 d</td><td><strong>CrushCookies</strong></td><td class="tel">554899250147</td><td class="gancho">Sim sim eu já passei tudo pra ela</td></tr></tbody></table></div>
 <h2>4 · O que ficou mudo <span class="tag">a segunda tentativa</span></h2>
   <div class="kpis">
-    <div class="kpi "><div class="k">Conversas mudas</div><div class="v">59</div><div class="d">nós falamos por último e não houve resposta</div></div>
-    <div class="kpi b"><div class="k">Sem segunda tentativa</div><div class="v">3</div><div class="d">receberam uma mensagem só</div></div>
-    <div class="kpi w"><div class="k">Paradas há mais de 7 dias</div><div class="v">9</div><div class="d">a janela boa para voltar</div></div>
-    <div class="kpi g"><div class="k">Já responderam e esfriaram</div><div class="v">9</div><div class="d">o alvo mais barato que existe</div></div>
+    <div class="kpi "><div class="k">Conversas mudas</div><div class="v">55</div><div class="d">nós falamos por último e não houve resposta</div></div>
+    <div class="kpi b"><div class="k">Sem segunda tentativa</div><div class="v">1</div><div class="d">receberam uma mensagem só</div></div>
+    <div class="kpi w"><div class="k">Paradas há mais de 7 dias</div><div class="v">7</div><div class="d">a janela boa para voltar</div></div>
+    <div class="kpi g"><div class="k">Já responderam e esfriaram</div><div class="v">7</div><div class="d">o alvo mais barato que existe</div></div>
   </div>
   <div class="box good">
     <h4>Por que este quadro é o que importa aqui</h4>
@@ -134,59 +134,41 @@ Em frente</td></tr></tbody></table></div>
     <p>Por isso a lista abaixo é só de quem <strong>já respondeu alguma vez</strong> e depois calou. Essa pessoa não é lead frio: ela já demonstrou interesse e parou.</p>
   </div>
   <div class="scroll"><table><thead><tr><th>Parada há</th><th>Nome</th><th>Telefone</th><th class="n">Tentativas</th><th>Última coisa que mandamos</th></tr></thead><tbody><tr>
-      <td class="n">11.8 d</td>
+      <td class="n">29 d</td>
+      <td class="nome">E08414 / E08356 - corporativo indaia<span class="mini">Controle</span></td>
+      <td class="tel">554796641720</td>
+      <td class="n">21</td>
+      <td class="gancho"></td></tr><tr>
+      <td class="n">12.8 d</td>
       <td class="nome">Eliza Coelho<span class="mini">Sem Status</span></td>
       <td class="tel">554791663977</td>
       <td class="n">17</td>
       <td class="gancho">Boa tarde desculpa a demora, sem problemas, espero que ele melhore!!</td></tr><tr>
-      <td class="n">9.8 d</td>
+      <td class="n">10.8 d</td>
       <td class="nome">Liliane Dantas<span class="mini">Lead Quente</span></td>
       <td class="tel">5547933858089</td>
       <td class="n">29</td>
       <td class="gancho">E conversaram sobre sábado ou domingo:?</td></tr><tr>
-      <td class="n">9.8 d</td>
+      <td class="n">10.8 d</td>
       <td class="nome">Thamara💕<span class="mini">Lead Quente</span></td>
       <td class="tel">5548984664876</td>
       <td class="n">6</td>
       <td class="gancho">Boa tarde!!!
 Thamara, passando para desejar um ótimo começo de semana e saber como está a familia, espero que tenham tido noticias boas. 🙏 Lembrando que continuo aqui se precisar é só me chamar.
 Pode</td></tr><tr>
-      <td class="n">9.7 d</td>
-      <td class="nome">Vanessa<span class="mini">Sem Status</span></td>
-      <td class="tel">555491590356</td>
-      <td class="n">11</td>
-      <td class="gancho">Boa tarde!!!
-Vanessa tudo certo com vocês?  Separei uma condição de fechamento de mês que talvez faça sentido pra vocês, mas nada obrigatório, só não queria deixar de te contar.  Se quiser eu te mando</td></tr><tr>
-      <td class="n">8.9 d</td>
-      <td class="nome">Nathi Sander<span class="mini">Lead Quente</span></td>
-      <td class="tel">554999642018</td>
-      <td class="n">83</td>
-      <td class="gancho">Oi Nathi! Tudo certo com você?
-
-Fiquei pensando em vocês esses dias e percebi que nossa conversa acabou ficando em aberto…
-
-
-Queria saber como vocês estão e se chegaram a amadurecer algo em relação ao</td></tr><tr>
-      <td class="n">8.9 d</td>
+      <td class="n">9.9 d</td>
       <td class="nome">Kátia Dias<span class="mini">Lead Quente</span></td>
       <td class="tel">554799552279</td>
       <td class="n">18</td>
       <td class="gancho">Combinado Katia, boa semana!🥰</td></tr><tr>
-      <td class="n">8 d</td>
-      <td class="nome">Daniele Dorow Alves<span class="mini">Sem Status</span></td>
-      <td class="tel">555381220711</td>
-      <td class="n">5</td>
-      <td class="gancho">Boa tarde!!!
-Dani o que você acha de eu te mandar um esboço inicial de uma proposta? Assim conseguimos alinhar ela do jeito que você gostaria, caso queira trocar algo
-Pode ser?</td></tr><tr>
-      <td class="n">7.9 d</td>
+      <td class="n">8.9 d</td>
       <td class="nome">Isadora Martendal<span class="mini">Lead Quente</span></td>
       <td class="tel">554797918010</td>
       <td class="n">25</td>
       <td class="gancho">Bom dia!!!
 Isa, tudo certo com você? Conseguiram verificar a proposta!!!
 O que você acha?</td></tr><tr>
-      <td class="n">7.8 d</td>
+      <td class="n">8.8 d</td>
       <td class="nome">Tuany<span class="mini">Lead Quente</span></td>
       <td class="tel">554791477332</td>
       <td class="n">27</td>
@@ -197,224 +179,228 @@ Fiquei pensando em vocês esses dias e percebi que nossa conversa acabou ficando
 
 Queria saber como vocês estão e se chegaram a amadurecer algo em relação ao</td></tr><tr>
       <td class="n">7 d</td>
-      <td class="nome">Flavia Indicatti<span class="mini">Sem Status</span></td>
-      <td class="tel">555181583331</td>
-      <td class="n">5</td>
-      <td class="gancho">Bom dia Flavia!!! Ah com certeza, vou anotar aqui e te chamo sim!</td></tr><tr>
-      <td class="n">7 d</td>
-      <td class="nome">Mara<span class="mini">Sem Status</span></td>
-      <td class="tel">5548999583767</td>
-      <td class="n">11</td>
-      <td class="gancho">Bom dia Mara. conseguiiu verificar as opções?</td></tr><tr>
-      <td class="n">6.7 d</td>
-      <td class="nome">Nana Gitti<span class="mini">Lead Quente</span></td>
-      <td class="tel">554891430777</td>
-      <td class="n">10</td>
-      <td class="gancho">Boa tarde!!!
-Tudo certo Nana? Conversaram sobre a nova proposta, como ficou para vocês? Se quiser podemos juntos verificar todos os pontos.
-Pode ser?</td></tr><tr>
-      <td class="n">6 d</td>
-      <td class="nome">Ana Paula Hasse<span class="mini">Lead Quente</span></td>
-      <td class="tel">5547996556822</td>
-      <td class="n">12</td>
-      <td class="gancho">Bom dia Ana!!
-Tudo certo com você?
-Conseguiram verificar a proposta, me conta se ficou alguma dúvida. Me passa aqui
-Pode ser?</td></tr><tr>
-      <td class="n">6 d</td>
-      <td class="nome">Simoni<span class="mini">Lead Quente</span></td>
-      <td class="tel">554898579706</td>
-      <td class="n">13</td>
-      <td class="gancho">Bom dia Simoni!!
-Tudo certo com você?
-Tenho uma vaga disponível para conversa hoje a tarde!! Se estiver tranquiilo esse horário para você podemos alinhar
-Pode ser?</td></tr><tr>
-      <td class="n">6 d</td>
       <td class="nome">Flavia Kaufmann<span class="mini">Lead Quente</span></td>
       <td class="tel">554788097830</td>
       <td class="n">17</td>
       <td class="gancho">Pode ser?</td></tr><tr>
-      <td class="n">5.9 d</td>
-      <td class="nome">Vitória Fraga - Vai fazer cirurgia 04/08<span class="mini">Sem Status</span></td>
-      <td class="tel">554398522330</td>
-      <td class="n">7</td>
-      <td class="gancho">Teria disponibilidade para conversar um pouco?</td></tr></tbody></table></div>
+      <td class="n">3.7 d</td>
+      <td class="nome">Isabela Schead<span class="mini">Lead Quente</span></td>
+      <td class="tel">554791168558</td>
+      <td class="n">13</td>
+      <td class="gancho">[áudio] Eu vou te mandar um áudio aqui, tá? Fica tranquila se você não puder ouvir agora, mas eu consegui a proposta. Eu acho que eu até consegui algo diferenciado porque os componsos que estavam disp</td></tr><tr>
+      <td class="n">2.8 d</td>
+      <td class="nome">Marina Oliveira<span class="mini">Lead Quente</span></td>
+      <td class="tel">554891487720</td>
+      <td class="n">10</td>
+      <td class="gancho">Então conta comigo Mari, vamos organizar isso !</td></tr><tr>
+      <td class="n">2.7 d</td>
+      <td class="nome">Grasi Taysen - AGENDADA<span class="mini">Sem Status</span></td>
+      <td class="tel">554899241399</td>
+      <td class="n">6</td>
+      <td class="gancho">Mas é diferente de uma comemoração com a família. um momento tão unico tem que ser comemorado ....</td></tr><tr>
+      <td class="n">2.7 d</td>
+      <td class="nome">Luana 🌻<span class="mini">Sem Status</span></td>
+      <td class="tel">554791984753</td>
+      <td class="n">5</td>
+      <td class="gancho">Boa tarde!!!
+Lu!!! Como você está? Se sentindo melhor. Te chamei para conversar sobre esse dia tão especial
+Pode ser?</td></tr><tr>
+      <td class="n">2.7 d</td>
+      <td class="nome">Emily Santos - AGENDADO<span class="mini">Sem Status</span></td>
+      <td class="tel">554796980071</td>
+      <td class="n">6</td>
+      <td class="gancho">[áudio] Ah, isso é legal, sabe, Emily? Porque a gente tem pacotes bem fechadinhos. Por exemplo, eu vou te dar um exemplo aqui, né? Esse cinco que você pegou não tem nem caipirinha, nem aperol. Então, </td></tr><tr>
+      <td class="n">2.7 d</td>
+      <td class="nome">Gabrieli Reis<span class="mini">Sem Status</span></td>
+      <td class="tel">554788718971</td>
+      <td class="n">51</td>
+      <td class="gancho">Boa tarde!!!
+Gabiiii, me conta conversaram ontem um pouco depois do trabalho? Se quiser podemos verificar tudo juntos.
+Pode ser?</td></tr><tr>
+      <td class="n">2.7 d</td>
+      <td class="nome">Larissa Cristiane<span class="mini">Sem Status</span></td>
+      <td class="tel">554799823704</td>
+      <td class="n">4</td>
+      <td class="gancho">Boa tarde!!!
+Larissa, tudo certo?! Ontem conversando com a diretoria consegui algo um pouco diferente....vou te passar aqui,
+Pode ser?</td></tr><tr>
+      <td class="n">2.7 d</td>
+      <td class="nome">Rodrigo<span class="mini">Sem Status</span></td>
+      <td class="tel">554891259154</td>
+      <td class="n">71</td>
+      <td class="gancho">[áudio] Rodrigo, meu Deus, estava tudo tão certinho, você gostou de tanta coisa. Aconteceu algo mais grave em relação ao dinheiro? Porque aí a gente pode verificar uma entrada diferenciada, tá? Talvez</td></tr></tbody></table></div>
 <h2>5 · Conversas para tocar hoje <span class="tag">nome, telefone e o que falta</span></h2>
-  <h3>O cliente falou por último · 6</h3><div class="scroll"><table><thead><tr><th>Cliente</th><th>Telefone</th><th class="n">Parada há</th><th>Onde parou · o que falta</th></tr></thead><tbody><tr>
+  <h3>O cliente falou por último · 8</h3><div class="scroll"><table><thead><tr><th>Cliente</th><th>Telefone</th><th class="n">Parada há</th><th>Onde parou · o que falta</th></tr></thead><tbody><tr>
     <td class="nome">Kathelen Martello<span class="mini">Sem Status</span></td>
     <td class="tel">554999715726</td>
-    <td class="n">20.7 d<span class="mini">30 tentativas</span></td>
-    <td class="gancho">Muda desde 13/08 (20 dias), orçando em Lages — mandar hoje a segunda mensagem, por texto, oferecendo reunião online.</td>
+    <td class="n">21.7 d<span class="mini">30 tentativas</span></td>
+    <td class="gancho">Muda há 22 dias desde que avisou que ia orçar em Lages — mandar hoje a segunda mensagem, por texto, perguntando como ficou a comparação.</td>
   </tr><tr>
     <td class="nome">Mileyde Peron<span class="mini">Sem Status</span></td>
     <td class="tel">554792571151</td>
-    <td class="n">8.7 d<span class="mini">8 tentativas</span></td>
-    <td class="gancho">Sem interesse por hora (25/08), mas pediu novidades — enviar uma novidade concreta nesta semana e manter em nutrição.</td>
+    <td class="n">9.7 d<span class="mini">8 tentativas</span></td>
+    <td class="gancho">Disse 'sem interesse por hora' em 25/08 mas pediu para ser atualizada — cumprir a promessa e enviar a primeira novidade ainda esta semana.</td>
   </tr><tr>
     <td class="nome">Yellen lizzia<span class="mini">Lead Quente</span></td>
     <td class="tel">554891704679</td>
-    <td class="n">6.9 d<span class="mini">12 tentativas</span></td>
-    <td class="gancho">Prometeu fechar na volta da viagem e chega sábado 05/09 — tirar da régua automática e mandar mensagem à mão no sábado marcando o fechamento.</td>
+    <td class="n">7.9 d<span class="mini">12 tentativas</span></td>
+    <td class="gancho">Prometeu por escrito fechar na volta da viagem e chega sábado 05/09 — mensagem escrita à mão amanhã, cumprindo o combinado de setembro.</td>
   </tr><tr>
-    <td class="nome">Nicoli Glembowski<span class="mini">Lead Quente</span></td>
-    <td class="tel">554788681896</td>
-    <td class="n">6.9 d<span class="mini">22 tentativas</span></td>
-    <td class="gancho">Ficou de decidir com o Rafa no fim de semana passado e ninguém cobrou — perguntar hoje a decisão e propor reunião online com os dois.</td>
+    <td class="nome">Pri Costa 🏃🏻‍♀️🩷<span class="mini">Lead Quente</span></td>
+    <td class="tel">554891357030</td>
+    <td class="n">0.7 d<span class="mini">30 tentativas</span></td>
+    <td class="gancho">Aguardando resultado da cirurgia do namorado — anotar o prazo do cupom prometido e retomar em uma semana com convite de videochamada.</td>
   </tr><tr>
-    <td class="nome">Li<span class="mini">Lead Quente</span></td>
-    <td class="tel">5547996168192</td>
-    <td class="n">1.9 d<span class="mini">20 tentativas</span></td>
-    <td class="gancho">Reunião mantida para hoje (quinta) à noite, sem o Patrick — confirmar ainda de manhã o horário e quem vai atender.</td>
+    <td class="nome">Carla Marcos Soares<span class="mini">Sem Status</span></td>
+    <td class="tel">554799676567</td>
+    <td class="n">0.6 d<span class="mini">2 tentativas</span></td>
+    <td class="gancho">Reclamação em áudio ontem 21:41 sem resposta — responder hoje cedo, por texto, agradecendo o feedback e perguntando o que resolveria.</td>
   </tr><tr>
-    <td class="nome">Eloá Sifuentes<span class="mini">Sem Status</span></td>
-    <td class="tel">554498424461</td>
-    <td class="n">0.7 d<span class="mini">5 tentativas</span></td>
-    <td class="gancho">Detalhou ontem à noite a proposta concorrente de R$ 35 mil — responder hoje por escrito, sem áudio, com comparativo e convite de reunião online.</td>
+    <td class="nome">Emily<span class="mini">Lead Quente</span></td>
+    <td class="tel">554797411586</td>
+    <td class="n">0.6 d<span class="mini">37 tentativas</span></td>
+    <td class="gancho">Declinou ontem por gap de R$ 8,5 mil mas deixou porta aberta ('por hora') — responder hoje oferecendo reunião online com versão da proposta dentro dos R$ 40 mil.</td>
+  </tr><tr>
+    <td class="nome">💞<span class="mini">Sem Status</span></td>
+    <td class="tel">555182283139</td>
+    <td class="n">0 d<span class="mini">147 tentativas</span></td>
+    <td class="gancho">Decidindo entre 5-6 casas com evento em 03-04/10 — voltar hoje com dia e hora da visita liberada pelo engenheiro e resposta por texto à objeção de bebidas.</td>
+  </tr><tr>
+    <td class="nome">CrushCookies<span class="mini">Lead Quente</span></td>
+    <td class="tel">554899250147</td>
+    <td class="n">0 d<span class="mini">72 tentativas</span></td>
+    <td class="gancho">Proposta de quinta enviada hoje e a mãe (decisora) visita sábado — confirmar por texto a reunião de fechamento para depois da visita.</td>
   </tr></tbody></table></div>
-  <h3>Nós falamos por último e a conversa parou · 12</h3><div class="scroll"><table><thead><tr><th>Cliente</th><th>Telefone</th><th class="n">Parada há</th><th>Onde parou · o que falta</th></tr></thead><tbody><tr>
+  <h3>Nós falamos por último e a conversa parou · 10</h3><div class="scroll"><table><thead><tr><th>Cliente</th><th>Telefone</th><th class="n">Parada há</th><th>Onde parou · o que falta</th></tr></thead><tbody><tr>
+    <td class="nome">E08414 / E08356 - corporativo indaia<span class="mini">Controle</span></td>
+    <td class="tel">554796641720</td>
+    <td class="n">29 d<span class="mini">21 tentativas</span></td>
+    <td class="gancho">Dez mensagens sem texto enviadas em 06/08 e nenhuma resposta há 29 dias — verificar se o material chegou e se o contato é o correto.</td>
+  </tr><tr>
     <td class="nome">Eliza Coelho<span class="mini">Sem Status</span></td>
     <td class="tel">554791663977</td>
-    <td class="n">11.8 d<span class="mini">17 tentativas</span></td>
-    <td class="gancho">Reunião cancelada em 22/08 (filho no hospital) e nunca reagendada — perguntar hoje pelo filho e reoferecer a conversa, com opção online.</td>
+    <td class="n">12.8 d<span class="mini">17 tentativas</span></td>
+    <td class="gancho">Visita cancelada em 22/08 por emergência com o filho e sem contato desde então — retomar hoje perguntando do filho e propondo reunião online.</td>
   </tr><tr>
     <td class="nome">Liliane Dantas<span class="mini">Lead Quente</span></td>
     <td class="tel">5547933858089</td>
-    <td class="n">9.8 d<span class="mini">29 tentativas</span></td>
-    <td class="gancho">Proposta de sábado enviada em 21/08 e muda desde 24/08 — segunda tentativa hoje com o valor do sábado por escrito e convite de reunião online.</td>
+    <td class="n">10.8 d<span class="mini">29 tentativas</span></td>
+    <td class="gancho">Sem resposta desde a pergunta sobre sábado ou domingo em 24/08 — segunda tentativa hoje (já passou dos 7 dias) com convite de reunião online.</td>
   </tr><tr>
     <td class="nome">Thamara💕<span class="mini">Lead Quente</span></td>
     <td class="tel">5548984664876</td>
-    <td class="n">9.8 d<span class="mini">6 tentativas</span></td>
-    <td class="gancho">Pausa por doença grave na família, sem resposta desde 24/08 — toque humano na semana que vem, sem falar de venda.</td>
-  </tr><tr>
-    <td class="nome">Vanessa<span class="mini">Sem Status</span></td>
-    <td class="tel">555491590356</td>
-    <td class="n">9.7 d<span class="mini">11 tentativas</span></td>
-    <td class="gancho">Visitando concorrentes; teaser de condição em 24/08 ficou sem resposta — segunda tentativa hoje trocando o teaser por convite direto de reunião online.</td>
-  </tr><tr>
-    <td class="nome">Nathi Sander<span class="mini">Lead Quente</span></td>
-    <td class="tel">554999642018</td>
-    <td class="n">8.9 d<span class="mini">83 tentativas</span></td>
-    <td class="gancho">Dúvidas de contrato respondidas em 18/08 e muda desde 25/08 — a multa de 150% ainda pesa; propor reunião online para fechar as cláusulas.</td>
+    <td class="n">10.8 d<span class="mini">6 tentativas</span></td>
+    <td class="gancho">Família em crise de saúde, último contato humano em 24/08 sem resposta — nova mensagem leve na próxima semana, sem venda.</td>
   </tr><tr>
     <td class="nome">Kátia Dias<span class="mini">Lead Quente</span></td>
     <td class="tel">554799552279</td>
-    <td class="n">8.9 d<span class="mini">18 tentativas</span></td>
-    <td class="gancho">Recusou continuidade em 25/08 — mover para nutrição e avisar quando sair o próximo Dream Day.</td>
-  </tr><tr>
-    <td class="nome">Daniele Dorow Alves<span class="mini">Sem Status</span></td>
-    <td class="tel">555381220711</td>
-    <td class="n">8 d<span class="mini">5 tentativas</span></td>
-    <td class="gancho">Reunião online oferecida em 19/08 ficou sem resposta e a dúvida de valores de decoração segue sem resposta por escrito — responder por texto hoje e reoferecer a reunião.</td>
+    <td class="n">9.9 d<span class="mini">18 tentativas</span></td>
+    <td class="gancho">Recusou continuidade em 25/08 e aceitou só aviso do próximo Dream Day — mover para nutrição e avisar quando houver evento.</td>
   </tr><tr>
     <td class="nome">Isadora Martendal<span class="mini">Lead Quente</span></td>
     <td class="tel">554797918010</td>
-    <td class="n">7.9 d<span class="mini">25 tentativas</span></td>
-    <td class="gancho">Proposta atualizada enviada em 25/08 e muda desde 26/08 — segunda tentativa hoje propondo reunião online para fechar a forma de pagamento.</td>
+    <td class="n">8.9 d<span class="mini">25 tentativas</span></td>
+    <td class="gancho">Negociava entrada e parcelas e está muda desde 26/08 — segunda tentativa hoje propondo reunião online para fechar a forma de pagamento.</td>
   </tr><tr>
     <td class="nome">Tuany<span class="mini">Lead Quente</span></td>
     <td class="tel">554791477332</td>
-    <td class="n">7.8 d<span class="mini">27 tentativas</span></td>
-    <td class="gancho">Duas cobranças sem resposta desde 21/08 — na próxima mensagem, hoje, oferecer reunião online com todas as letras em vez de perguntar se viu o material.</td>
+    <td class="n">8.8 d<span class="mini">27 tentativas</span></td>
+    <td class="gancho">Dois follow-ups sem resposta desde 21/08 — última tentativa com convite de reunião online antes de mover para nutrição.</td>
   </tr><tr>
-    <td class="nome">Flavia Indicatti<span class="mini">Sem Status</span></td>
-    <td class="tel">555181583331</td>
-    <td class="n">7 d<span class="mini">5 tentativas</span></td>
-    <td class="gancho">Em viagem; pediu conversa dia 10/09 de manhã — agendar à mão e cumprir; nada até lá.</td>
+    <td class="nome">Flavia Kaufmann<span class="mini">Lead Quente</span></td>
+    <td class="tel">554788097830</td>
+    <td class="n">7 d<span class="mini">17 tentativas</span></td>
+    <td class="gancho">Em viagem até 10/09 com descontos da consultoria segurados — preparar mensagem escrita à mão para o dia 10/09.</td>
   </tr><tr>
-    <td class="nome">Mara<span class="mini">Sem Status</span></td>
-    <td class="tel">5548999583767</td>
-    <td class="n">7 d<span class="mini">11 tentativas</span></td>
-    <td class="gancho">Sem leitura da conversa hoje.</td>
+    <td class="nome">Isabela Schead<span class="mini">Lead Quente</span></td>
+    <td class="tel">554791168558</td>
+    <td class="n">3.7 d<span class="mini">13 tentativas</span></td>
+    <td class="gancho">Proposta à vista enviada em 31/08 sem resposta — segunda tentativa na segunda 08/09, na janela dos 7 dias, com convite de reunião online.</td>
   </tr><tr>
-    <td class="nome">Nana Gitti<span class="mini">Lead Quente</span></td>
-    <td class="tel">554891430777</td>
-    <td class="n">6.7 d<span class="mini">10 tentativas</span></td>
-    <td class="gancho">Proposta com 50% enviada em 24/08 e quem decide é o pai da aniversariante; muda desde 27/08 — perguntar hoje quando ele vai ver e propor reunião online com ele.</td>
+    <td class="nome">Marina Oliveira<span class="mini">Lead Quente</span></td>
+    <td class="tel">554891487720</td>
+    <td class="n">2.8 d<span class="mini">10 tentativas</span></td>
+    <td class="gancho">Pediu tempo em 01/09 para fechar a lista de convidados de Minas — retomar a partir de 09/09 com convite de reunião online.</td>
   </tr></tbody></table></div>
 <h2>6 · Vale reativar <span class="tag">fora da janela de 30 dias</span></h2>
   <div class="box good">
     <h4>Por que estas conversas estão separadas</h4>
-    <p>O painel acima é a carteira dos últimos 30 dias — o trabalho de hoje. Estas <strong>145 conversas</strong> estão paradas há mais tempo, mas <strong>o cliente já falou alguma vez</strong>: não são lista fria, são gente que demonstrou interesse e sumiu. As 13 mais recentes estão abaixo, da que esfriou por último para a mais antiga.</p>
+    <p>O painel acima é a carteira dos últimos 30 dias — o trabalho de hoje. Estas <strong>153 conversas</strong> estão paradas há mais tempo, mas <strong>o cliente já falou alguma vez</strong>: não são lista fria, são gente que demonstrou interesse e sumiu. As 13 mais recentes estão abaixo, da que esfriou por último para a mais antiga.</p>
     <p>Reabrir aqui não é cobrar resposta: é perguntar se o evento ainda existe. Quem já fechou em outro lugar informa isso e sai da lista; quem só adiou volta para a carteira.</p>
   </div>
   <div class="scroll"><table><thead><tr><th>Parada há</th><th>Nome</th><th>Telefone</th><th class="n">Cliente falou há</th><th>A última coisa que ele disse</th></tr></thead><tbody><tr>
     <td class="n">31 d</td>
+    <td class="nome">Ana Paula<span class="mini">Nutrição</span></td>
+    <td class="tel">5571991749009</td>
+    <td class="n">31 d</td>
+    <td class="gancho">Não senti , pelo seu comercial , a menor disposição para ajudar</td></tr><tr>
+    <td class="n">31 d</td>
+    <td class="nome">Luana Ribeiro ✨<span class="mini">Nutrição</span></td>
+    <td class="tel">5547988984233</td>
+    <td class="n">31 d</td>
+    <td class="gancho">como não sabíamos os valores, acabou que fechamos com outro. Mas desde de já agradeço a atenção!</td></tr><tr>
+    <td class="n">31 d</td>
+    <td class="nome">Cintia<span class="mini">Nutrição</span></td>
+    <td class="tel">554797864553</td>
+    <td class="n">31 d</td>
+    <td class="gancho">[Áudio] [áudio] Ah, Carol, eu acho que a gente podia estar deixando, tá? Até o Vitor, ele fez uma reduzida ali, a gente tinha conseguido alguns postures também, ele já tinha reduzido, mas daí ficaria indo um valor alto, consideravelmente al</td></tr><tr>
+    <td class="n">18 d</td>
+    <td class="nome">Andriely<span class="mini">Nutrição</span></td>
+    <td class="tel">554884734406</td>
+    <td class="n">31 d</td>
+    <td class="gancho">Claro</td></tr><tr>
+    <td class="n">32 d</td>
     <td class="nome">Myrela<span class="mini">Nutrição</span></td>
     <td class="tel">5548998498823</td>
-    <td class="n">31 d</td>
+    <td class="n">32 d</td>
     <td class="gancho">Boa tarde tudo bem, preciso do reembolso.</td></tr><tr>
-    <td class="n">31 d</td>
+    <td class="n">32 d</td>
     <td class="nome">Gleisiane<span class="mini">Nutrição</span></td>
     <td class="tel">554799775640</td>
-    <td class="n">31 d</td>
+    <td class="n">32 d</td>
     <td class="gancho">Ok,obrigada.</td></tr><tr>
-    <td class="n">31 d</td>
+    <td class="n">32 d</td>
     <td class="nome">Beatriz<span class="mini">Nutrição</span></td>
     <td class="tel">554797593454</td>
-    <td class="n">31 d</td>
+    <td class="n">32 d</td>
     <td class="gancho">Oi Carol, tudo certo e vc?
 Fechamos com outro espaço, já assinamos e pagamos a entrada.
 De qualquer forma, agradeço pelo contato.
 Ótima semana!</td></tr><tr>
-    <td class="n">31 d</td>
+    <td class="n">32 d</td>
     <td class="nome">Amanda fleck<span class="mini">Nutrição</span></td>
     <td class="tel">559282171601</td>
-    <td class="n">31 d</td>
+    <td class="n">32 d</td>
     <td class="gancho">Perfeito</td></tr><tr>
-    <td class="n">31 d</td>
+    <td class="n">32 d</td>
     <td class="nome">Adriana Nardelli<span class="mini">Nutrição</span></td>
     <td class="tel">554784427703</td>
-    <td class="n">31 d</td>
+    <td class="n">32 d</td>
     <td class="gancho">Bom dia, tudo certo! Não, obrigada, no momento vamos deixar off😉</td></tr><tr>
-    <td class="n">31 d</td>
+    <td class="n">32 d</td>
     <td class="nome">Djenifer Borges ❤️❤️<span class="mini">Nutrição</span></td>
     <td class="tel">554888046555</td>
-    <td class="n">31 d</td>
+    <td class="n">32 d</td>
     <td class="gancho">Infelizmente ja fechamos em outro local ontem, mais muito obrigadaaaa, vcs são tops no atendimento, mais infelizmente o financeiro nao deu certo,  fica para a proxima.</td></tr><tr>
-    <td class="n">30 d</td>
+    <td class="n">31 d</td>
     <td class="nome">Luci Barros<span class="mini">Nutrição</span></td>
     <td class="tel">554799269050</td>
-    <td class="n">32 d</td>
-    <td class="gancho"></td></tr><tr>
     <td class="n">33 d</td>
+    <td class="gancho"></td></tr><tr>
+    <td class="n">31 d</td>
+    <td class="nome">Debora<span class="mini">Nutrição</span></td>
+    <td class="tel">554788510936</td>
+    <td class="n">34 d</td>
+    <td class="gancho">Sim! Gostamos muito mesmo!</td></tr><tr>
+    <td class="n">34 d</td>
     <td class="nome">Pedro<span class="mini">Nutrição</span></td>
     <td class="tel">554199620633</td>
-    <td class="n">33 d</td>
-    <td class="gancho">[Áudio] [áudio] Aqui nós já temos os espaços também todos preparados, tá? Tem o salão da noiva, salão de festa, pousada, poço artesiano, uma capela maravilhosa toda edificada em eucalipto. Eu te convido a você visitar o Instagram, é uma áre</td></tr><tr>
     <td class="n">34 d</td>
-    <td class="nome">Cleise<span class="mini">Nutrição</span></td>
-    <td class="tel">554899050302</td>
-    <td class="n">34 d</td>
-    <td class="gancho">Ok ?</td></tr><tr>
-    <td class="n">35 d</td>
-    <td class="nome">Leidiane<span class="mini">Nutrição</span></td>
-    <td class="tel">554788140165</td>
-    <td class="n">35 d</td>
-    <td class="gancho">Tudo bem</td></tr><tr>
-    <td class="n">35 d</td>
-    <td class="nome">Ellen - Mãe da noiva<span class="mini">Nutrição</span></td>
-    <td class="tel">554699878186</td>
-    <td class="n">35 d</td>
-    <td class="gancho">Como a Maria tbm trabalha na área de noivas, ela recebeu uma boa proposta do local.</td></tr><tr>
-    <td class="n">35 d</td>
-    <td class="nome">Camila Castro<span class="mini">Nutrição</span></td>
-    <td class="tel">554791368170</td>
-    <td class="n">35 d</td>
-    <td class="gancho">Aguardo seu retorno,
-
-Atte. 
-Dra. Camila Castro 
-Biomédica</td></tr><tr>
-    <td class="n">35 d</td>
-    <td class="nome">Lauren 🔥<span class="mini">Nutrição</span></td>
-    <td class="tel">555198833387</td>
-    <td class="n">36 d</td>
-    <td class="gancho">Tudo sim</td></tr></tbody></table></div>
+    <td class="gancho">[Áudio] [áudio] Aqui nós já temos os espaços também todos preparados, tá? Tem o salão da noiva, salão de festa, pousada, poço artesiano, uma capela maravilhosa toda edificada em eucalipto. Eu te convido a você visitar o Instagram, é uma áre</td></tr></tbody></table></div>
 <h2>7 · O que eu faria hoje</h2>
-  <ol class="plano"><li><strong>Hoje, antes das 12h</strong> — Eloá: responder por escrito, sem áudio, à proposta concorrente de R$ 35 mil — comparativo direto do que o Indaiá entrega a mais e convite para reunião online ainda esta semana. Ela está decidindo agora.</li><li><strong>Hoje, antes das 12h</strong> — Li: confirmar a reunião de hoje à noite — horário exato e quem atende no lugar do Patrick. A reunião foi mantida, mas ninguém fechou a logística.</li><li><strong>Hoje, à tarde</strong> — Nicoli: mensagem à mão perguntando o que ela e o Rafa decidiram no fim de semana e propondo reunião online com os dois à noite, no horário que servir para ele.</li><li><strong>Hoje, à tarde</strong> — Eliza: perguntar como o filho está e reoferecer a conversa que foi cancelada em 22/08, com a opção online para facilitar.</li><li><strong>Hoje</strong> — Nana: perguntar quando o pai da aniversariata vai ver a proposta e se oferecer para apresentá-la a ele em reunião online — sem repetir desconto nem cupom.</li><li><strong>Hoje</strong> — Segunda tentativa nas conversas mudas há mais de 7 dias — Kathelen, Liliane, Vanessa, Tuany, Isadora e Nathi: uma mensagem cada, terminando com pergunta e oferecendo reunião online com todas as letras.</li><li><strong>Sábado, 05/09</strong> — Yellen: mensagem escrita à mão de boas-vindas na chegada e marcar a conversa de fechamento — ela prometeu fechar na volta. Deixar anotado também o retorno prometido à Flavia para 10/09 de manhã.</li></ol>
+  <ol class="plano"><li><strong>Hoje, antes das 12h</strong> — Maitê: cobrar o engenheiro, voltar com dia e hora da visita ao espaço e responder por texto (não áudio) a objeção de valor e bebidas. Evento dela é em um mês e ela está escolhendo entre 5-6 casas agora.</li><li><strong>Hoje, antes das 12h</strong> — Carla Marcos Soares: responder a reclamação de ontem à noite por texto, agradecer o feedback sem defender o processo e perguntar o que resolveria para ela.</li><li><strong>Hoje, até 15h</strong> — Emily: responder o declínio agradecendo a transparência e oferecer reunião online para apresentar uma versão da proposta dentro dos R$ 40 mil. Sem citar desconto.</li><li><strong>Hoje, até 18h</strong> — CrushCookies (Olivia): confirmar por texto a reunião de fechamento para depois da visita da mãe no sábado, já propondo dia e hora, terminando com pergunta.</li><li><strong>Hoje, até 18h</strong> — Eliza Coelho: retomar perguntando do filho e propor reunião online — resolve a agenda que já derrubou duas visitas presenciais.</li><li><strong>Hoje, até 18h</strong> — Isadora Martendal: segunda tentativa (muda há 9 dias, janela boa) propondo reunião online para bater o martelo da forma de pagamento.</li><li><strong>Amanhã, sábado 05/09</strong> — Yellen: mensagem escrita à mão de boas-vindas — ela chega amanhã e disse que vai fechar. Cumprir a promessa do contato de setembro e já propor a reunião de fechamento.</li></ol>
 
-<p class="foot">Gerado automaticamente em 03/09/2026, 09:30. Conversas: time Vendas [AG] no indachat, apenas os tickets atribuídos a Carol (1762 dos 1783 do time), 199 tickets abertos com movimento nos últimos 30 dias e as mensagens dos últimos 45 dias. 
+<p class="foot">Gerado automaticamente em 04/09/2026, 09:30. Conversas: time Vendas [AG] no indachat, apenas os tickets atribuídos a Carol (1764 dos 1785 do time), 191 tickets abertos com movimento nos últimos 30 dias e as mensagens dos últimos 45 dias. 
 <br><br><strong>Como ler os números.</strong> “Mediana de espera” conta do momento em que o cliente escreveu sem ter resposta até a primeira resposta de uma pessoa — resposta automática não para o relógio. “Conversas” só inclui aquelas em que o cliente falou, para a régua automática não inflar o número. Este painel é só de conversa: Ação Gerente e Recovery trabalham retomada atravessando todos os setores, e não existe filtro no CRM que isole a carteira deles sem inventar vínculo.
 </p>
 </div>
