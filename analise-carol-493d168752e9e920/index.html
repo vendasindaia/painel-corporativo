@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="referrer" content="no-referrer">
+<title>Carol — análise do atendimento · 31/08/2026 a 07/09/2026</title>
+<style>
+  :root{--roxo:#6d28d9;--roxo-claro:#f3eefe;--tinta:#1e1b2e;--cinza:#6b6580;--fundo:#faf9fc;--card:#fff;--borda:#e8e4f1;
+        --verde:#0e7c4f;--verde-claro:#e7f6ee;--ambar:#92610a;--ambar-claro:#fdf3dd;--verm:#b3213b;--verm-claro:#fdecef}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--fundo);color:var(--tinta);line-height:1.58;padding-bottom:70px}
+  .wrap{max-width:960px;margin:0 auto;padding:0 22px}
+  header{background:linear-gradient(135deg,#2e1065,#6d28d9);color:#fff;padding:42px 0 34px;margin-bottom:30px}
+  header .tag{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);border-radius:99px;padding:3px 13px;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:13px}
+  header h1{font-size:1.85rem;line-height:1.25;margin-bottom:9px}
+  header p{opacity:.92;max-width:760px;font-size:.96rem}
+  h2{font-size:1.32rem;margin:48px 0 6px;color:var(--roxo);display:flex;align-items:center;gap:10px}
+  h2 .num{background:var(--roxo);color:#fff;border-radius:8px;width:31px;height:31px;display:inline-flex;align-items:center;justify-content:center;font-size:.98rem;flex:none}
+  .sub{color:var(--cinza);margin-bottom:16px;font-size:.94rem}
+  h3{font-size:1.06rem;margin:30px 0 9px}
+  h4{font-size:.95rem;margin:18px 0 6px;color:var(--roxo)}
+  p{margin:10px 0}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:12px;margin:18px 0}
+  .kpi{background:var(--card);border:1px solid var(--borda);border-radius:11px;padding:14px 16px}
+  .kpi b{display:block;font-size:1.5rem;color:var(--roxo);line-height:1.2}
+  .kpi.bom b{color:var(--verde)}
+  .kpi.ruim b{color:var(--verm)}
+  .kpi span{font-size:.82rem;color:var(--cinza)}
+  .fala{background:#f7f4fd;border-left:3px solid #ddd2f7;border-radius:0 8px 8px 0;padding:9px 14px;margin:8px 0;font-size:.92rem;color:#4a4360}
+  .fala.boa{background:var(--verde-claro);border-left-color:#bfe5d0}
+  .fala .quem{display:block;font-size:.78rem;color:var(--cinza);margin-bottom:3px;font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+  .ok{background:var(--verde-claro);border:1px solid #bfe5d0;border-radius:11px;padding:14px 18px;margin:16px 0;font-size:.93rem}
+  .ok b{color:var(--verde)}
+  .alerta{background:var(--ambar-claro);border:1px solid #ecd9ab;border-radius:11px;padding:14px 18px;margin:16px 0;font-size:.93rem}
+  .alerta b{color:var(--ambar)}
+  .perigo{background:var(--verm-claro);border:1px solid #f0c4cd;border-radius:11px;padding:14px 18px;margin:16px 0;font-size:.93rem}
+  .perigo b{color:var(--verm)}
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--borda);border-radius:11px;overflow:hidden;margin:15px 0;font-size:.87rem}
+  th{background:var(--roxo-claro);color:var(--roxo);text-align:left;padding:9px 12px;font-size:.75rem;text-transform:uppercase;letter-spacing:.04em}
+  td{padding:9px 12px;border-top:1px solid var(--borda);vertical-align:top}
+  .tabela-scroll{overflow-x:auto}
+  .tel{white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--roxo);font-weight:600}
+  .num-d{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .etiq{display:inline-block;background:var(--roxo-claro);color:var(--roxo);border-radius:99px;padding:1px 8px;font-size:.7rem;font-weight:700;vertical-align:middle}
+  .caso{background:var(--card);border:1px solid var(--borda);border-radius:12px;padding:18px 20px;margin:18px 0}
+  .caso .cab{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:baseline;margin-bottom:4px}
+  .caso .cab h3{margin:0;font-size:1.1rem}
+  .caso .cab .val{font-weight:700;color:var(--roxo)}
+  .caso .hist{font-size:.9rem;color:var(--cinza);margin-bottom:10px}
+  .legenda{font-size:.78rem;color:var(--cinza)}
+  .rodape{margin-top:50px;padding-top:17px;border-top:1px solid var(--borda);color:var(--cinza);font-size:.82rem}
+  .metodo{font-size:.85rem;color:var(--cinza);background:#f4f2f9;border:1px dashed var(--borda);border-radius:10px;padding:12px 16px;margin:14px 0}
+  @media print{body{background:#fff}header{background:#2e1065!important}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <span class="tag">Ação Gerente · 31/08/2026 a 07/09/2026</span>
+    <h1>Carol Frigeri — análise do atendimento</h1>
+    <p>74 conversas com movimento na semana, 671 mensagens dela lidas uma a uma
+    (texto e áudio transcrito), 9 notas internas. O que segue não é ranking: é o que dá para melhorar amanhã,
+    com nome, telefone e a frase pronta.</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<h2><span class="num">1</span> A leitura em um minuto</h2>
+<p>Semana forte na base do trabalho dela: fechou 6 contratos no período, somando R$ 326.007, e sustenta o ritmo que o Ação Gerente exige — 59% das falas sem resposta receberam segunda tentativa e 62% dessas destravaram. A velocidade também aparece no número: mediana de 2,6 minutos para responder em dia útil e 19,3 no fim de semana, que ela cobre sozinha. Escreve texto autoral e sabe puxar o decisor do casal para dentro da conversa quando trava.</p><p>O gargalo é o fechamento da própria fala e o cuidado com o valor. Só 678 dos 1549 turnos (44%) terminam com pergunta ou próximo passo — mais da metade das mensagens dela não pede nada de volta, contra a régua 1. E o erro mais caro do período foi de valor: com a Carla ela citou percentual de desconto e deixou o número oscilar (22 mil, 12 mil, 50%) antes do fechamento, ferindo as réguas 3, 4 e 5 e queimando um lead quente que virou reclamação.</p><p>Nenhum contrato assinado está com pagamento parado (0). O que sangra é o funil: 138 leads caíram sem nenhuma segunda tentativa, um pedido de cancelamento de contrato (Karol Zanelatto) está há 5 dias sem resposta, um cliente que já fechou (Junior Force Laser) espera retorno há mais de 3 dias, e 10 conversas morreram num 'obrigada' sem próximo passo.</p>
+
+<div class="metodo">
+<b>Como foi apurado.</b> Duas janelas, de propósito: as <b>listas de ação</b> e os casos olham os últimos <b>7 dias</b>;
+os <b>indicadores de comportamento</b> olham <b>30 dias</b>, porque em uma semana não há amostra suficiente para
+uma taxa significar alguma coisa. Áudio entra na conta por transcrição. Nota interna nunca conta como mensagem ao cliente.
+Antes de uma conversa entrar como "cliente esperando", ela é conferida em <b>todos os times do chat</b> — o mesmo cliente costuma
+ter ticket em vários times, e a resposta pode ter saído pelo Pós-Vendas ou pelo Financeiro.
+</div>
+
+<div class="cards"><div class="kpi "><b>72</b><span>conversas atendidas por ela em 7 dias</span></div><div class="kpi "><b>671</b><span>mensagens escritas na semana</span></div><div class="kpi bom"><b>3 min</b><span>mediana de resposta em dia útil</span></div><div class="kpi bom"><b>19 min</b><span>mediana de resposta no fim de semana</span></div><div class="kpi ruim"><b>1 de 21</b><span>leads novos sem nenhuma palavra humana</span></div><div class="kpi bom"><b>60%</b><span>das falas sem resposta receberam nova tentativa</span></div><div class="kpi bom"><b>R$ 326.007</b><span>6 contratos no time em 30 dias</span></div><div class="kpi "><b>9</b><span>notas internas em 30 dias</span></div></div>
+
+<h2><span class="num">2</span> O que ela já fez — antes de qualquer orientação</h2>
+<p class="sub">As notas internas do período, na íntegra. Nada que já esteja aqui volta como recomendação mais abaixo.</p>
+<div class="tabela-scroll"><table>
+<thead><tr><th>Quando</th><th>Cliente</th><th>Nota</th></tr></thead>
+<tbody><tr><td class="num-d">2026-08-14 18:31</td><td>Daniel<br><span class="tel">554891190059</span></td><td>mandei whatsapp para a esposa!</td></tr><tr><td class="num-d">2026-08-28 19:42</td><td>conservas zabel<br><span class="tel">554796535562</span></td><td>Chamei a esposa</td></tr><tr><td class="num-d">2026-08-19 20:00</td><td>Patricia Wilberte<br><span class="tel">554792724896</span></td><td>falando com o Marido</td></tr><tr><td class="num-d">2026-09-03 19:09</td><td>Flavia Indicatti<br><span class="tel">555181583331</span></td><td>chamar dias 10/09</td></tr><tr><td class="num-d">2026-08-24 14:15</td><td>Pablo T.<br><span class="tel">554891181805</span></td><td>contato com a noiva fernanda</td></tr><tr><td class="num-d">2026-09-03 19:15</td><td>Ione Bahls<br><span class="tel">5548996603844</span></td><td>Em conversa com a noiva! visita sábado</td></tr><tr><td class="num-d">2026-08-17 12:01</td><td>E08646 - Cláudia<br><span class="tel">554792170090</span></td><td>falando  com o marido (Roni)</td></tr><tr><td class="num-d">2026-09-03 13:48</td><td>E06536 - Elisangela Pollheim Zabel<br><span class="tel">5547996168192</span></td><td>alinhada consultoria presencial Terça dia 8/09</td></tr><tr><td class="num-d">2026-09-03 19:19</td><td>E06536 - Elisangela Pollheim Zabel<br><span class="tel">5547996168192</span></td><td>reunião presencial - 07/09/2026 19:30</td></tr></tbody>
+</table></div>
+<h4>Reengajamento sem pressão, que já aposentou as aberturas fracas</h4><p>A retomada dela agora dá saída honrosa ao cliente e reabre a porta, em vez do apelo emocional que rendia pouco. É uma abertura que respeita o tempo do lead e ainda assim pede resposta.</p><div class="fala boa"><span class="quem">Gabrieli Reis (554788718971)</span>"Oi Gabii, não quero insistir à toa. Se o evento não for mais acontecer, me avisa que eu encerro seu atendimento por aqui, sem problema nenhum."</div><h4>Leva quem bate o martelo para a mesa</h4><p>Quando percebeu que a filha só repassava, ela foi direto falar com a mãe, que era quem decidia e pagava. Régua 7 na prática: descobrir o decisor e trazê-lo para a conversa.</p><div class="fala boa"><span class="quem">CrushCookies (554899250147)</span>"Estou falando com ela"</div><h4>Vínculo humano real que segura o lead quente</h4><p>Diante do irmão da cliente em cirurgia, ela acolheu sem forçar agenda e ainda saiu com a reunião presencial remarcada. O calor manteve viva uma conta que poderia esfriar.</p><div class="fala boa"><span class="quem">E06536 - Elisangela Pollheim Zabel (5547996168192)</span>"Oi Eli, não imagina, não precisa pedir desculpas não, tá? Espero que não tenha sido nada grave, que dê tudo certo na cirurgia."</div><h4>Fecha na hora certa quando o cliente diz sim</h4><p>A cliente estava pronta e ela não deixou esfriar: confirmou o valor, mandou o Pix e a assinatura na sequência. Alçada usada como deve — o contrato E08671 (R$ 57.781) saiu na mesma noite.</p><div class="fala boa"><span class="quem">E08671 - Jessica Larissa (554799435028)</span>"Esperando seu sim para eu enviar para Assinatura"</div>
+
+<h2><span class="num">3</span> Como ela atende — os indicadores</h2>
+<p class="sub">Medido sobre o texto real dela nos últimos 30 dias, áudio transcrito incluído.</p>
+<div class="tabela-scroll"><table>
+<thead><tr><th>Comportamento</th><th class="num-d">Aparece em</th><th class="num-d">%</th></tr></thead>
+<tbody><tr><td>CTA — blocos de fala que terminam pedindo algo</td><td class="num-d">678 de 1549</td><td class="num-d"><b>44%</b></td></tr><tr><td>Escassez (data, pré-reserva, prazo)</td><td class="num-d">4 conversas</td><td class="num-d"><b>2%</b></td></tr><tr><td>Valor citado no chat</td><td class="num-d">30 conversas</td><td class="num-d"><b>17%</b></td></tr><tr><td>Encontro oferecido (reunião, visita, consultoria)</td><td class="num-d">116 conversas</td><td class="num-d"><b>67%</b></td></tr><tr><td>…dos quais ONLINE com todas as letras</td><td class="num-d">55 conversas</td><td class="num-d"><b>32%</b></td></tr><tr><td>Decisor mapeado (diretoria, pais, cônjuge, sócio)</td><td class="num-d">41 conversas</td><td class="num-d"><b>24%</b></td></tr></tbody>
+</table></div>
+<p>Em 30 dias ela fez <b>1.782</b> tentativas de contato.
+  <b>361</b> ficaram sem resposta do cliente; dessas, <b>218 (60%)</b> receberam
+  nova tentativa e <b>132</b> destravaram (61%).
+  Quem destravou recebeu a nova mensagem em <b>2.8 dias</b> de mediana; quem não destravou, em 4.0 dias.</p>
+<h4>As 12 mais antigas que ficaram numa tentativa só (de 138)</h4>
+<div class="tabela-scroll"><table>
+<thead><tr><th>Cliente</th><th>Telefone</th><th>Pasta</th><th>Última coisa que dissemos</th><th class="num-d">Parada</th></tr></thead>
+<tbody><tr><td>Daniel</td><td><span class="tel">554891190059</span></td><td>Nutrição</td><td>Bom dia Daniel!!
+Tudo certo com você?
+Como você está, queria conversar um momento com vocês para personalizar alguns pontos dessa festa tão especial, tenho uma </td><td class="num-d">27.8 d</td></tr><tr><td>Simone - Ciona Concept</td><td><span class="tel">554899614128</span></td><td>Nutrição</td><td>Oi Simone!!!
+Tudo certo com você?
+Tenho uma alternativa que pode contribuir com o planejamento do seu evento e gostaria de explicar melhor quando você tiver dis</td><td class="num-d">27.7 d</td></tr><tr><td>Jessika - Sonho De Criança</td><td><span class="tel">558391341571</span></td><td>Nutrição</td><td>Oi Jessika!!!
+Fiquei com vocês na cabeça depois que mandei a primeira mensagem 😊 Pensei em alguns pontos que talvez ajudem a destravar o que ficou em aberto na</td><td class="num-d">27.7 d</td></tr><tr><td>Maria</td><td><span class="tel">554888378666</span></td><td>Nutrição</td><td>Oi Maria!!!
+Fiquei com vocês na cabeça depois que mandei a primeira mensagem 😊 Pensei em alguns pontos que talvez ajudem a destravar o que ficou em aberto na c</td><td class="num-d">27.7 d</td></tr><tr><td>Alexandra</td><td><span class="tel">554998202863</span></td><td>Nutrição</td><td>[áudio] Oi Alexandra, vou te mandar um áudio então. Eu entendo sim tá, quando o pessoal vem de fora é um pouco mais complicado, mas eu não sei o perfil dos conv</td><td class="num-d">27.6 d</td></tr><tr><td>Maiara</td><td><span class="tel">554788685690</span></td><td>Nutrição</td><td>Fico à disposição, no tempo de vocês caso queiram receber os pdf e arquivos e também conversar sobre o orçamento, claro que pelas circunstâncias vamos buscar tr</td><td class="num-d">27.6 d</td></tr><tr><td>Aline Cristina</td><td><span class="tel">554788172681</span></td><td>Nutrição</td><td>Oi Aline! Tudo certo com você?
+
+Fiquei pensando em vocês esses dias e percebi que nossa conversa acabou ficando em aberto…
+
+
+Queria saber como vocês estão e se </td><td class="num-d">26.9 d</td></tr><tr><td>Nadine Holbrich</td><td><span class="tel">554791286446</span></td><td>Nutrição</td><td>Oi Nadine!!!
+Tudo certo com você?
+Tenho uma alternativa que pode contribuir com o planejamento do seu evento e gostaria de explicar melhor quando você tiver dis</td><td class="num-d">26.9 d</td></tr><tr><td>Pedro</td><td><span class="tel">554898142975</span></td><td>Nutrição</td><td>Oi Pedro! Tudo certo com você?
+
+Fiquei pensando em vocês esses dias e percebi que nossa conversa acabou ficando em aberto…
+
+
+Queria saber como vocês estão e se </td><td class="num-d">26.7 d</td></tr><tr><td>Andrea Debossan</td><td><span class="tel">554784511735</span></td><td>Nutrição</td><td>Entendo, é sim uma decisão onde vários fatores pesam. Mas tenho certeza que aqui será um local onde vocês terão uma entrega impecável e com a garantia de um dia</td><td class="num-d">25.6 d</td></tr><tr><td>Cris</td><td><span class="tel">14704508475</span></td><td>Nutrição</td><td>Oi, Cris, tudo certo com você?! 
+Fiquei com vocês na cabeça desde a consultoria. Queria te fazer uma pergunta só, e pode ser sincera comigo: o que faltou para v</td><td class="num-d">24.7 d</td></tr><tr><td>Leonardo</td><td><span class="tel">554491634235</span></td><td>Nutrição</td><td>Oi Leonardo! Tudo certo com você?
+
+Fiquei pensando em vocês esses dias e percebi que nossa conversa acabou ficando em aberto…
+
+
+Queria saber como vocês estão e </td><td class="num-d">24.7 d</td></tr></tbody>
+</table></div>
+
+<h2><span class="num">4</span> Os casos da semana</h2>
+<p class="sub">Situação → o que foi feito → a técnica que se aplica → a fala pronta.</p>
+<div class="caso">
+  <div class="cab"><h3>Caso 1 · Carla Marcos Soares — desconto exposto vira reclamação</h3></div>
+  <p class="hist">Lead quente de reunião que não fechou por achar o valor alto. Ao tentar reabrir, a Carol jogou números e um desconto grande na cara da cliente, que reagiu acusando a casa de incoerência e de possível má-fé, e no fim pediu o nome dos proprietários. <span class="tel">554799676567</span></p>
+  <div class="fala"><span class="quem">O que aconteceu</span>Citou percentual de desconto solto e ainda deixou o valor oscilar: &quot;Como pedido de desculpas vou eu mesma aplicar um cupom de 50% de locação para vocês!&quot; e depois &quot;a ultima proposta que tivemos no sistema estava em 12 mil. por isso eu digo que teve algum erro na realização do contrato.&quot;</div>
+  <div class="perigo">Erro triplo. Régua 3: nunca citar percentual de desconto antes do fechamento — o '50%' amarrou tudo. Régua 5: o valor nunca muda depois de apresentado — 22 mil, depois 12 mil, depois metade, destruiu a credibilidade. Régua 4: preço cheio primeiro e coerente. O pedido dos proprietários é sinal de escalada; responder rápido e com uma versão única e fechada é urgente.</div>
+  <div class="fala boa"><span class="quem">A fala pronta</span>&quot;Carla, assumo que a comunicação te confundiu e sinto muito de verdade. Não vou te mandar número solto: vou refazer o orçamento do zero com o consultor, com o valor final já fechado, parcelas e tudo dentro, e te apresento uma coisa só, coerente. Você me dá até amanhã para eu te levar isso certo e a gente conversar juntas o que faz sentido para vocês?&quot;</div>
+</div><div class="caso">
+  <div class="cab"><h3>Caso 2 · Karol Zanelatto — pedido de cancelamento sem resposta</h3></div>
+  <p class="hist">Contrato fechado na hora pelo noivo, como surpresa. Depois de ler o contrato, a cliente relatou divergências entre o que foi explicado e as cláusulas, e sensação de pressão no fechamento, e pediu formalmente o cancelamento. A conversa está sem resposta há 5 dias. <span class="tel">554896156224</span></p>
+  <div class="fala"><span class="quem">O que aconteceu</span>A última fala dela foi só &quot;Fecharam com outro espaço?&quot; e, quando veio o desabafo e o pedido de cancelamento, a conversa ficou sem retorno.</div>
+  <div class="perigo">Pedido de cancelamento não espera. Deixar 5 dias em silêncio transforma insatisfação em reclamação formal e risco de estorno. Régua 7: quem assinou no impulso foi o noivo, mas quem está decidindo o cancelamento é o casal com a mãe — é com eles que se fala. Acolher a queixa das cláusulas antes de tratar o cancelamento pode reabrir a conta.</div>
+  <div class="fala boa"><span class="quem">A fala pronta</span>&quot;Karol, obrigada pela sinceridade e me desculpa pela sensação de pressão, não é isso que a gente quer. Antes de encaminhar qualquer cancelamento, queria entender com você e seu noivo, numa conversa rápida, exatamente quais cláusulas ficaram divergentes, porque várias dá para ajustar. Vocês conseguem falar comigo ainda hoje, no horário que for melhor para os dois?&quot;</div>
+</div><div class="caso">
+  <div class="cab"><h3>Caso 3 · Gabrieli Reis — decisor ausente derruba R$ 37 mil</h3><span class="val">R$ 37.000</span></div>
+  <p class="hist">Lead de consultoria retomado. A Carol conseguiu baixar de 49 para 37 mil com os juros já embutidos, o que está certo, mas a cliente não conseguia enxergar o desconto no PDF e decidia junto com o noivo Eduardo, que nunca entrou na conversa. No fim, o casal encerrou por causa do total somado com DJ e cerimônia. <span class="tel">554788718971</span></p>
+  <div class="fala"><span class="quem">O que aconteceu</span>Explicou bem o número final com juros dentro: &quot;Não, Gabi, deu 37 mil com os juros já. Você tá entendendo? Vocês iam pagar 49 e com os descontos que eu consegui, vocês vão pagar 37 no valor final.&quot;</div>
+  <div class="perigo">O número ela montou certo (régua 5, parcela e juros no primeiro valor). O que faltou foi régua 7: o Eduardo bate o martelo e nunca esteve na conversa — ela negociou o tempo todo com quem não decide. E a objeção real era o total com extras, não a parcela; sem os dois na mesma call com o número cheio na mão, o negócio caiu.</div>
+  <div class="fala boa"><span class="quem">A fala pronta</span>&quot;Gabi, entendo total, o que pesa é o total com tudo somado, não a parcela. Que tal marcarmos 20 minutos com você e o Eduardo juntos, à noite, e eu levo o valor cheio e a parcela final já com DJ e cerimônia dentro, para vocês decidirem com o número real na frente? Qual noite fica boa para os dois?&quot;</div>
+</div><div class="caso">
+  <div class="cab"><h3>Caso 4 · Junior Force Laser — cliente que já fechou, largado</h3></div>
+  <p class="hist">Cliente que já fechou casamento com o Bruno voltou pedindo para falar com ele, de preferência por ligação. A Carol disse que ia solicitar o contato e não retornou. O cliente mandou 'ainda no aguardo', 'boa noite', 'bom dia', 'alou' por mais de 3 dias, sem nenhuma resposta. <span class="tel">554788395102</span></p>
+  <div class="fala"><span class="quem">O que aconteceu</span>Prometeu e sumiu: &quot;Já vou solicitar o contato aqui!&quot;, e depois disso o cliente ficou dias mandando mensagem sozinho.</div>
+  <div class="alerta">Cliente que já pagou esperando dias vira reclamação de pós-venda, que é pior que lead perdido. Falha de próximo passo (régua 1) e de honrar prazo: se ia demorar, era dar um prazo real. Basta um retorno com data concreta ou resolver a dúvida na hora.</div>
+  <div class="fala boa"><span class="quem">A fala pronta</span>&quot;Jefferson, desculpa a demora no retorno. Falei com o Bruno e ele te liga amanhã de manhã, pode ser nesse horário para você? Se preferir adiantar qualquer dúvida do contrato agora, eu mesma resolvo com você por aqui. O que fica melhor?&quot;</div>
+</div><div class="caso">
+  <div class="cab"><h3>Caso 5 · Maite — lista de perguntas respondida picada</h3></div>
+  <p class="hist">Lead quente comparando ativamente com um concorrente mais barato e com mais horas de festa. Mandou uma lista clara de perguntas (visita, orçamento com bebidas, taxa, desconto de fornecedores) e recebeu áudios fragmentados e balões soltos, com a própria Carol perdendo o fio das perguntas. <span class="tel">555182283139</span></p>
+  <div class="fala"><span class="quem">O que aconteceu</span>Respondeu em pedaços e perdeu itens da lista, a ponto de admitir: &quot;Desculpa! não vi sua pergunta&quot;.</div>
+  <div class="alerta">Régua 6: pergunta em lista se responde em lista, por escrito, item a item. Com a cliente já comparando preço e horas, a resposta fragmentada por áudio faz o concorrente parecer mais organizado. Régua 1: fechar com um único CTA claro para a visita de domingo, na última linha.</div>
+  <div class="fala boa"><span class="quem">A fala pronta</span>&quot;Maite, te respondo item por item para ficar claro: 1) visita domingo, confirmo às 10h; 2) orçamento com bebidas, enviado, valor cheio de R$ [x] em [n]x já com tudo dentro; 3) taxa de equipe de 15% incide só sobre convidados adicionais, não sobre os 35; 4) fornecedores, R$ 15 de desconto na alimentação e Open 1 no lugar do Open 2. Fecho a visita de domingo para você ver tudo ao vivo?&quot;</div>
+</div>
+
+<h2><span class="num">5</span> O que fazer agora</h2>
+<h3>Clientes esperando resposta</h3>
+<div class="tabela-scroll"><table>
+<thead><tr><th>Cliente</th><th>Telefone</th><th>Última coisa que ele disse</th><th class="num-d">Esperando</th></tr></thead>
+<tbody><tr><td>Kathelen Martello</td><td><span class="tel">554999715726</span></td><td>Obrigada 🙏🏻</td><td class="num-d">24.6 d</td></tr><tr><td>Monique</td><td><span class="tel">554898594160</span></td><td>[Áudio] [áudio] Ah, entendi. Tá bom, Carol. Eu vou... Eu vou analisar um pouquinho. Final de semana que vem, na verdade, que é quando final de semana </td><td class="num-d">19.5 d</td></tr><tr><td>Priscilla Witt Wutke 🌸</td><td><span class="tel">554788230688</span></td><td>Obrigada 🙏🏻 🩷</td><td class="num-d">18.7 d</td></tr><tr><td>Camila De Farias</td><td><span class="tel">554892060207</span></td><td>Obrigada</td><td class="num-d">17.9 d</td></tr><tr><td>Tuane Pereira</td><td><span class="tel">554792184389</span></td><td>Simm, muito obrigada!</td><td class="num-d">17.8 d</td></tr><tr><td>Camili</td><td><span class="tel">554791229209</span></td><td>Sim</td><td class="num-d">13.8 d</td></tr><tr><td>Yasmim Baldessar</td><td><span class="tel">554898007849</span></td><td>Por seu atendimento</td><td class="num-d">13.3 d</td></tr><tr><td>conservas zabel</td><td><span class="tel">554796535562</span></td><td>Certo</td><td class="num-d">12.8 d</td></tr><tr><td>Mileyde Peron</td><td><span class="tel">554792571151</span></td><td>Sim rs</td><td class="num-d">12.6 d</td></tr><tr><td>Suelen</td><td><span class="tel">554799740439</span></td><td>😘</td><td class="num-d">12.6 d</td></tr><tr><td>Yellen lizzia</td><td><span class="tel">554891704679</span></td><td>Perfeito eu chego sab dia 05</td><td class="num-d">10.8 d</td></tr><tr><td>Taísa Albuquerque</td><td><span class="tel">5582993156887</span></td><td>[Áudio] [áudio] Oi, bom dia, tudo bem? Obrigada aqui pela atenção. Desculpa demorar pra responder. Eu tava trabalhando na hora que a gente tava conver</td><td class="num-d">4.9 d</td></tr><tr><td>E08662 - Ƙarol Zanelaŧŧo <span class="etiq">já assinou</span></td><td><span class="tel">554896156224</span></td><td>Após conversar com meu noivo e mostrar o contrato para minha mãe. Entendemos que seria melhor fazer o cancelamento do contrato. Principal motivo foi a</td><td class="num-d">4.9 d</td></tr><tr><td>Pri Costa 🏃🏻‍♀️🩷</td><td><span class="tel">554891357030</span></td><td>Obrigada</td><td class="num-d">3.6 d</td></tr><tr><td>Maite</td><td><span class="tel">555182283139</span></td><td>Certo</td><td class="num-d">2.6 d</td></tr><tr><td>Dra Jessica Pimentel 
+Suporte</td><td><span class="tel">5541999919849</span></td><td>Pode falar</td><td class="num-d">2.5 d</td></tr><tr><td>Gabrieli Reis</td><td><span class="tel">554788718971</span></td><td>[Áudio] [áudio] Então vocês podem encerrar assim, tá? A nossa conversa. Muito obrigada novamente, realmente sou muito grata a vocês por fazerem um pou</td><td class="num-d">2.5 d</td></tr><tr><td>Carla Marcos Soares</td><td><span class="tel">554799676567</span></td><td>Quem são os proprietários do Indaiá atualmente?</td><td class="num-d">1.9 d</td></tr><tr><td>CrushCookies</td><td><span class="tel">554899250147</span></td><td>Perfeito!</td><td class="num-d">1.7 d</td></tr></tbody>
+</table></div>
+<p class="sub">Outras <b>5</b> conversas apareceriam aqui, mas foram conferidas em todos os times do chat e <b>já haviam sido respondidas</b> por Pós-Vendas, Financeiro ou Pré-Vendas em outro ticket do mesmo cliente — não entram como pendência dela.</p>
+
+<h3>Leads novos que não receberam uma palavra humana</h3>
+<div class="tabela-scroll"><table>
+<thead><tr><th>Cliente</th><th>Telefone</th><th>O que ele disse</th><th class="num-d">Mensagens</th></tr></thead>
+<tbody><tr><td>E08657 - Cristhopher Lee</td><td><span class="tel">5513997135986</span></td><td>[Áudio] [áudio] Então se você puder resolver aí pra mim, não sei, conversar com seu patrão ali, igual você conversou aquele dia com ele aí que a gente</td><td class="num-d">3</td></tr></tbody>
+</table></div>
+
+<h2><span class="num">6</span> Os ajustes da semana</h2>
+<div class="tabela-scroll"><table>
+<thead><tr><th>Ajuste</th><th>Por que</th><th>Como fica na prática</th></tr></thead>
+<tbody><tr><td><b>Nunca citar percentual de desconto antes do fechamento</b></td><td>Régua 3: dizer '50%' ou 'de X por Y' amarra a montagem do orçamento do consultor e faz o cliente desconfiar do valor cheio, como aconteceu com a Carla.</td><td>Trocar 'apliquei 50% de locação' por 'consegui uma condição especial, o valor final fechado fica em R$ [x] em [n]x'.</td></tr><tr><td><b>Valor cheio primeiro e sem oscilar depois de apresentado</b></td><td>Réguas 4 e 5: mostrar o cheio antes de perguntar a expectativa evita ancoragem baixa, e o número que muda (22 mil, 12 mil, metade) destrói a confiança.</td><td>Apresentar um único valor fechado, já com parcelas e juros dentro, e só depois perguntar a expectativa de investimento do cliente.</td></tr><tr><td><b>Toda mensagem termina com uma pergunta na última linha</b></td><td>Régua 1: só 44% dos turnos (678 de 1549) pedem próximo passo — mais da metade das falas não devolve nada e a conversa esfria.</td><td>Consolidar os 4 ou 5 balões em uma mensagem e fechar sempre com 'podemos marcar para [dia]?' ou 'qual horário fica melhor para você?'.</td></tr><tr><td><b>Pergunta em lista se responde em lista, por escrito</b></td><td>Régua 6: responder por áudio picado uma lista de perguntas (Maite, Carla) faz perder itens e passa desorganização para quem está comparando com concorrente.</td><td>Numerar a resposta item a item, na mesma ordem em que o cliente perguntou, por texto, e só então mandar o CTA.</td></tr><tr><td><b>Cancelamento e reclamação respondem em minutos, não em dias</b></td><td>Deixar o pedido de cancelamento da Karol 5 dias parado e o Junior, já fechado, 3 dias no aguardo transforma insatisfação em reclamação formal e risco de estorno.</td><td>Toda mensagem com 'cancelar', 'contrato', 'dúvida na cláusula' ou cliente já fechado entra na frente da fila e recebe retorno no mesmo dia, com prazo real se precisar de terceiro.</td></tr><tr><td><b>Escassez honesta chega junto da proposta, não depois de esfriar</b></td><td>Régua 8: a escassez apareceu em só 4 conversas de 174 atendidas, quase sempre tarde. Data e prazo reais junto do orçamento aceleram a decisão.</td><td>Ao enviar a proposta, incluir 'essa data de [dia] ainda está aberta e consigo segurar essa condição até [data real]', sem inventar prazo.</td></tr><tr><td><b>Fechar os 'obrigada' pendentes com próximo passo concreto</b></td><td>10 conversas morreram num agradecimento sem CTA. Um 'obrigada' não é fim de negociação, é a deixa para marcar a próxima etapa.</td><td>Responder ao agradecimento com 'imagina! te chamo [dia] para a gente fechar os últimos detalhes, pode ser?' em vez de deixar a conversa encerrar sozinha.</td></tr></tbody>
+</table></div>
+
+<div class="rodape">
+  Análise gerada em 07/09/2026 sobre o banco do IndaChat (tickets, mensagens e notas do time Vendas [AG] atribuídos a Carol Frigeri) e o CRM de produção.
+  Janela de ação: 31/08/2026 a 07/09/2026. Janela de comportamento: 30 dias.
+  
+  <br>Página interna, atualizado em 07/09/2026. Não indexada: o endereço é o único controle de acesso.
+</div>
+
+</div>
+</body>
+</html>
