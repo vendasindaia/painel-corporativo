@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="referrer" content="no-referrer">
+<title>Time 2 — análise do atendimento · 01/09/2026 a 08/09/2026</title>
+<style>
+  :root{--roxo:#6d28d9;--roxo-claro:#f3eefe;--tinta:#1e1b2e;--cinza:#6b6580;--fundo:#faf9fc;--card:#fff;--borda:#e8e4f1;
+        --verde:#0e7c4f;--verde-claro:#e7f6ee;--ambar:#92610a;--ambar-claro:#fdf3dd;--verm:#b3213b;--verm-claro:#fdecef}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--fundo);color:var(--tinta);line-height:1.58;padding-bottom:70px}
+  .wrap{max-width:960px;margin:0 auto;padding:0 22px}
+  header{background:linear-gradient(135deg,#2e1065,#6d28d9);color:#fff;padding:42px 0 34px;margin-bottom:30px}
+  header .tag{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);border-radius:99px;padding:3px 13px;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:13px}
+  header h1{font-size:1.85rem;line-height:1.25;margin-bottom:9px}
+  header p{opacity:.92;max-width:760px;font-size:.96rem}
+  h2{font-size:1.32rem;margin:48px 0 6px;color:var(--roxo);display:flex;align-items:center;gap:10px}
+  h2 .num{background:var(--roxo);color:#fff;border-radius:8px;width:31px;height:31px;display:inline-flex;align-items:center;justify-content:center;font-size:.98rem;flex:none}
+  .sub{color:var(--cinza);margin-bottom:16px;font-size:.94rem}
+  h3{font-size:1.06rem;margin:30px 0 9px}
+  h4{font-size:.95rem;margin:18px 0 6px;color:var(--roxo)}
+  p{margin:10px 0}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:12px;margin:18px 0}
+  .kpi{background:var(--card);border:1px solid var(--borda);border-radius:11px;padding:14px 16px}
+  .kpi b{display:block;font-size:1.5rem;color:var(--roxo);line-height:1.2}
+  .kpi.bom b{color:var(--verde)}
+  .kpi.ruim b{color:var(--verm)}
+  .kpi span{font-size:.82rem;color:var(--cinza)}
+  .fala{background:#f7f4fd;border-left:3px solid #ddd2f7;border-radius:0 8px 8px 0;padding:9px 14px;margin:8px 0;font-size:.92rem;color:#4a4360}
+  .fala.boa{background:var(--verde-claro);border-left-color:#bfe5d0}
+  .fala .quem{display:block;font-size:.78rem;color:var(--cinza);margin-bottom:3px;font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+  .ok{background:var(--verde-claro);border:1px solid #bfe5d0;border-radius:11px;padding:14px 18px;margin:16px 0;font-size:.93rem}
+  .ok b{color:var(--verde)}
+  .alerta{background:var(--ambar-claro);border:1px solid #ecd9ab;border-radius:11px;padding:14px 18px;margin:16px 0;font-size:.93rem}
+  .alerta b{color:var(--ambar)}
+  .perigo{background:var(--verm-claro);border:1px solid #f0c4cd;border-radius:11px;padding:14px 18px;margin:16px 0;font-size:.93rem}
+  .perigo b{color:var(--verm)}
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--borda);border-radius:11px;overflow:hidden;margin:15px 0;font-size:.87rem}
+  th{background:var(--roxo-claro);color:var(--roxo);text-align:left;padding:9px 12px;font-size:.75rem;text-transform:uppercase;letter-spacing:.04em}
+  td{padding:9px 12px;border-top:1px solid var(--borda);vertical-align:top}
+  .tabela-scroll{overflow-x:auto}
+  .tel{white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--roxo);font-weight:600}
+  .num-d{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .etiq{display:inline-block;background:var(--roxo-claro);color:var(--roxo);border-radius:99px;padding:1px 8px;font-size:.7rem;font-weight:700;vertical-align:middle}
+  .caso{background:var(--card);border:1px solid var(--borda);border-radius:12px;padding:18px 20px;margin:18px 0}
+  .caso .cab{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:baseline;margin-bottom:4px}
+  .caso .cab h3{margin:0;font-size:1.1rem}
+  .caso .cab .val{font-weight:700;color:var(--roxo)}
+  .caso .hist{font-size:.9rem;color:var(--cinza);margin-bottom:10px}
+  .legenda{font-size:.78rem;color:var(--cinza)}
+  .rodape{margin-top:50px;padding-top:17px;border-top:1px solid var(--borda);color:var(--cinza);font-size:.82rem}
+  .metodo{font-size:.85rem;color:var(--cinza);background:#f4f2f9;border:1px dashed var(--borda);border-radius:10px;padding:12px 16px;margin:14px 0}
+  @media print{body{background:#fff}header{background:#2e1065!important}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <span class="tag">Pós-Vendas Time 2 · 01/09/2026 a 08/09/2026</span>
+    <h1>Pós-Vendas · Time 2 — análise do atendimento</h1>
+    <p>99 conversas com movimento em 4 dias de atendimento, 755 mensagens do time lidas uma a uma
+    (texto e áudio transcrito), 24 notas internas. O que segue não é ranking: é o que dá para melhorar amanhã,
+    com nome, telefone e a frase pronta.</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<h2><span class="num">1</span> A leitura em um minuto</h2>
+<p>O time entrega velocidade e cobertura. Em apenas 4 dias úteis (a casa fechou de 05 a 07/09), a mediana de resposta em dia útil ficou em 6,7 minutos, foram 80 das 99 conversas ativas atendidas e nenhum dos 13 leads novos passou de 24h sem retorno. A segunda tentativa destravou 204 contas e 10 aditivos foram assinados na semana. O motor é o Wyllian, com 628 mensagens em 7 dias enquanto a Beatriz estava inativa e o Arnaldo saiu no dia 07.</p><p>O gargalo não é contato, é conversão. No mês foram 284 aditivos criados contra 61 assinados: só 21% do que se enviou virou resultado, e 181 seguem em rascunho. Pior que número parado é o cliente da casa esperando: a Priscilla apontou que um documento pendente proíbe banda quando o vendedor prometeu que poderia, e essa reclamação ficou dias úteis sem resposta. Reclamação sobre o que já foi contratado é a régua número 5 e tinha que ter subido ao topo na mesma hora.</p><p>Há R$ 133.179 parados em 35 aditivos aguardando assinatura, e parte deles está dentro da janela de produção: o aditivo do Renato (R$ 9.576) é de um evento em 13/09, daqui a 5 dias, e o do Gustavo (R$ 6.864) é para 19/09. A Jussara sozinha soma R$ 19.641 travados por um motivo já resolvido em outra conta: o e-mail dela não abre e ninguém trocou o canal de assinatura por um link direto.</p>
+
+<div class="metodo">
+<b>Esta semana teve 4 dias de atendimento, não 7.</b>
+07/09, 06/09, 05/09 foram fim de semana ou feriado, com a casa fechada — o volume desta semana
+não se compara direto com o de uma semana cheia, e o silêncio desses dias não conta contra ninguém.<br>
+<b>Como foi apurado.</b> Duas janelas, de propósito: as <b>listas de ação</b> e os casos olham os últimos <b>7 dias</b>;
+os <b>indicadores de comportamento</b> olham <b>30 dias</b>, porque em uma semana não há amostra suficiente para
+uma taxa significar alguma coisa. Áudio entra na conta por transcrição. Nota interna nunca conta como mensagem ao cliente.
+Antes de uma conversa entrar como "cliente esperando", ela é conferida em <b>todos os times do chat</b> — o mesmo cliente costuma
+ter ticket em vários times, e a resposta pode ter saído pelo Pós-Vendas ou pelo Financeiro.
+</div>
+
+<div class="cards"><div class="kpi "><b>35</b><span>aditivos criados na semana (284 em 30 dias)</span></div><div class="kpi bom"><b>10</b><span>assinados na semana (61 em 30 dias)</span></div><div class="kpi bom"><b>R$ 293.557</b><span>assinado em 30 dias</span></div><div class="kpi ruim"><b>R$ 133.179</b><span>aprovado e sem assinatura (35 aditivos)</span></div><div class="kpi "><b>80</b><span>conversas atendidas em 7 dias</span></div><div class="kpi "><b>755</b><span>mensagens escritas na semana</span></div><div class="kpi bom"><b>7 min</b><span>mediana de resposta em dia útil</span></div><div class="kpi bom"><b>40 min</b><span>mediana de resposta no fim de semana</span></div><div class="kpi ruim"><b>50%</b><span>das falas sem resposta receberam nova tentativa</span></div><div class="kpi "><b>24</b><span>notas internas em 30 dias</span></div></div>
+
+<h2><span class="num">2</span> O que ela já fez — antes de qualquer orientação</h2>
+<p class="sub">As notas internas do período, na íntegra. Nada que já esteja aqui volta como recomendação mais abaixo.</p>
+<div class="tabela-scroll"><table>
+<thead><tr><th>Quando</th><th>Cliente</th><th>Nota</th></tr></thead>
+<tbody><tr><td class="num-d">2026-08-20 17:04</td><td>E08499 - Nathielle Lopes Cocolichio<br><span class="tel">554788134338</span></td><td>INCLUIR REUNIAO NO SISTEMA</td></tr><tr><td class="num-d">2026-08-21 19:12</td><td>E08607 - Andressa de Souza Pereira<br><span class="tel">554797861927</span></td><td>BOAS VINDAS</td></tr><tr><td class="num-d">2026-08-13 12:10</td><td>E07559 - Evelyn Costa<br><span class="tel">5548996523897</span></td><td>Não está conseguindo acessar a área do cliente.</td></tr><tr><td class="num-d">2026-08-11 16:46</td><td>E06772 - Jonas Traldi<br><span class="tel">5548999493236</span></td><td>Enviar contrato e itens contratados</td></tr><tr><td class="num-d">2026-08-27 14:06</td><td>Jana🥂<br><span class="tel">554884740811</span></td><td>verificado com os noivos</td></tr><tr><td class="num-d">2026-08-19 16:14</td><td>E08498 - Daniela Carvalho<br><span class="tel">554788225962</span></td><td>mandei hoje para assinatura da alteração de data, ela nao assinou ainda e pediu o cancelamento</td></tr><tr><td class="num-d">2026-08-14 12:55</td><td>E06537 - Nayara Colzani Da Rocha Peixer<br><span class="tel">5548999150788</span></td><td>Número de adultos (incluindo contratantes): 91
+Número de crianças de 0 a 6 anos: 15
+Número de crianças de 7 a 12 anos: 4
+Número de fornecedores que participam do evento: 6</td></tr><tr><td class="num-d">2026-08-10 14:36</td><td>E07370 - Larissa Schmidt Silvano<br><span class="tel">5548996119184</span></td><td>E07370 - Larissa Schmidt Silvano
+Bom dia
+10/08 09:49
+ES
+Gostaria de marcar uma reunião
+10/08 09:49</td></tr><tr><td class="num-d">2026-08-14 12:55</td><td>E06600 - Jardel Frare Cerimoniais E Eventos<br><span class="tel">5547988141516</span></td><td>Número de adultos (incluindo contratantes): 60
+Número de crianças de 0 a 6 anos: 3
+Número de crianças de 7 a 12 anos: 3
+Número de fornecedores que participam do evento: 8</td></tr><tr><td class="num-d">2026-08-14 13:12</td><td>E06600 - Jardel Frare Cerimoniais E Eventos<br><span class="tel">5547988141516</span></td><td>Número de adultos (incluindo contratantes): 60
+Número de crianças de 0 a 6 anos: 3
+Número de crianças de 7 a 12 anos: 3
+Número de fornecedores que participam do evento: 9</td></tr><tr><td class="num-d">2026-08-19 17:35</td><td>E07025 - Quetlin Giotti De Souza<br><span class="tel">5548992052727</span></td><td>QUER MARCAR VISITA PARA CONHECER OS ESPAÇOS DE ITAPEMA PARA TROCAR DE AMBIENTE</td></tr><tr><td class="num-d">2026-08-12 14:55</td><td>E08074 - Daiane Mezzari<br><span class="tel">5511958072592</span></td><td>Era pra transferir para o jonathan, mas foi pra assessoria, transferir para o Felipe à pedido do Jonathan</td></tr><tr><td class="num-d">2026-08-17 18:10</td><td>E08301 - Emily Silva Gomes<br><span class="tel">554899395396</span></td><td>&quot;Emi, entendo a ideia, mas infelizmente não temos como disponibilizar o pagamento avulso por bebida para os fornecedores — o Indaiá é fornecedor exclusivo de bebidas do evento, então tudo que é servido no espaço precisa passar pelo open bar contratado, não dá pra ser pago separado por fora. 🙏🏼
+
+Por isso, a forma que continua sendo mais viável é contabilizar o open bar 01 para os dois fornecedores dentro do aditivo, do jeitinho que a gente já vinha calculando. Caso o violinista confirme que vai ficar na festa, é só me avisar que eu já ajusto pra três 😊</td></tr><tr><td class="num-d">2026-08-18 14:07</td><td>E07115 - Carolina Cadore Henschel<br><span class="tel">5521979191040</span></td><td>montar os orçamentos</td></tr></tbody>
+</table></div>
+<h4>Trocou o canal quando o e-mail travou e fechou</h4><p>Quando o documento não chegava por e-mail, o Arnaldo não insistiu no canal quebrado: mandou o link direto de assinatura pela própria conversa e o aditivo foi assinado na hora. É exatamente o que resolve os aditivos parados de outras contas.</p><div class="fala boa"><span class="quem">E07928 - Carolina Cassol Bainha (5548999737263)</span>"clica nesse link aqui que ele vai te direcionar pra te fazer a assinatura, tá bom?"</div><h4>Cobrou a assinatura pendente e destravou</h4><p>O aditivo estava aprovado mas não assinado. O time voltou e cobrou a assinatura como parte do serviço, não como insistência, e a cliente respondeu na hora que tinha esquecido e assinou. É a régua 3 aplicada certo.</p><div class="fala boa"><span class="quem">E05403 - Daniele Fernanda Prigol Feller (554792375552)</span>"Podemos retomar sobre o seu adicional de convidados que está pendente de assinatura?"</div><h4>Perguntou antes de empurrar</h4><p>Diante do pedido de trazer fornecedor de fora, o Wyllian investigou o motivo real antes de oferecer qualquer coisa. É a régua 9: o aditivo bom resolve o que o cliente quer, e para isso é preciso descobrir o que ele quer.</p><div class="fala boa"><span class="quem">E08492 - Emerson (554788457844)</span>"essa vontade de levar um fornecedor de fora pro lanche da madrugada é mais pela questão de valor, ou vocês já têm alguém de confiança que gostariam de levar?"</div><h4>Urgência honesta que fechou no mesmo dia</h4><p>O Arnaldo usou o reajuste real do mês seguinte e o desconto da ação como motivo verdadeiro para decidir agora, sem inventar escassez. O adicional de convidados foi assinado no mesmo dia.</p><div class="fala boa"><span class="quem">E08267 - Matheus A. R. (554799191953)</span>"Os convidados que você me passou sendo antes do nosso reajuste que haverá mês que vem e aproveitando os 20% de desconto da ação ficam assim:"</div>
+
+<h2><span class="num">3</span> Como ela atende — os indicadores</h2>
+<p class="sub">Medido sobre o texto real dela nos últimos 30 dias, áudio transcrito incluído.</p>
+<div class="tabela-scroll"><table>
+<thead><tr><th>Comportamento</th><th class="num-d">Aparece em</th><th class="num-d">%</th></tr></thead>
+<tbody><tr><td>CTA — blocos de fala que terminam pedindo algo</td><td class="num-d">1454 de 3291</td><td class="num-d"><b>44%</b></td></tr><tr><td>Valor citado no chat</td><td class="num-d">180 conversas</td><td class="num-d"><b>47%</b></td></tr><tr><td>Reunião ou Confirmação Final falada</td><td class="num-d">94 conversas</td><td class="num-d"><b>24%</b></td></tr><tr><td>…dos quais ONLINE com todas as letras</td><td class="num-d">37 conversas</td><td class="num-d"><b>10%</b></td></tr><tr><td>Outro decisor puxado (cônjuge, mãe, quem paga)</td><td class="num-d">3 conversas</td><td class="num-d"><b>1%</b></td></tr></tbody>
+</table></div>
+<p>Em 30 dias ela fez <b>3.678</b> tentativas de contato.
+  <b>567</b> ficaram sem resposta do cliente; dessas, <b>281 (50%)</b> receberam
+  nova tentativa e <b>204</b> destravaram (73%).
+  Quem destravou recebeu a nova mensagem em <b>1.0 dias</b> de mediana; quem não destravou, em 1.7 dias.</p>
+<h4>As 12 mais antigas que ficaram numa tentativa só (de 286)</h4>
+<div class="tabela-scroll"><table>
+<thead><tr><th>Cliente</th><th>Telefone</th><th>Pasta</th><th>Última coisa que dissemos</th><th class="num-d">Parada</th></tr></thead>
+<tbody><tr><td>E06889 - Andréia Panchera Schneider</td><td><span class="tel">554899318160</span></td><td>1. ENTRADA</td><td>Olá, tudo bem?
+
+Devido a falta de retorno, estaremos encerrando o chamado! Qualquer dúvida, ficamos a disposição para auxiliar da melhor forma! 🙏</td><td class="num-d">29.1 d</td></tr><tr><td>E06376 - Thalia Minuzzi</td><td><span class="tel">554796264524</span></td><td>2. EM ATENDIMENTO</td><td>Thalia, proximo ao evento, no período de 180 dias antes do evento a taxa já passa a ser de 50% do valor total do evento, antes disso ainda se mantem a taxa de 2</td><td class="num-d">29.1 d</td></tr><tr><td>E08454 - Jasminy ✨</td><td><span class="tel">554884275802</span></td><td>2. EM ATENDIMENTO</td><td>Sobre essa sua dúvida, é com o setor de financeiro, vou transferir o chamado. Assim que possível nossa equipe entrará em contato contigo</td><td class="num-d">29 d</td></tr><tr><td>E05746 - Gisele</td><td><span class="tel">554898193258</span></td><td>2. EM ATENDIMENTO</td><td>Olá Gisele, tudo bem? Aqui é Beatriz, referente ao pacote completo do DJ ESSENCIAL, na nossa ação promocional da semana ele sairia de R$9.000,00 por R$6.500,00 </td><td class="num-d">28.9 d</td></tr><tr><td>E06405 - Ana Paula Macedo Dias /</td><td><span class="tel">554888327611</span></td><td>2. EM ATENDIMENTO</td><td>Imaginaaa, eu que agradeço o retorno 🙏🏼</td><td class="num-d">28.8 d</td></tr><tr><td>E07671 - Maria Eduarda Lauth</td><td><span class="tel">5547992002502</span></td><td>3. ASSINATURA E PAGAMENTO</td><td>Isso mesmo Maria 🙏🏼</td><td class="num-d">28.1 d</td></tr><tr><td>E07275 - Matheus Henrique Moreira</td><td><span class="tel">5548991547474</span></td><td>2. EM ATENDIMENTO</td><td>Eu que ahgradeço pelo retorno, qualquer dúvida ou necessidade é só chamar aqui 🙏🏼</td><td class="num-d">28 d</td></tr><tr><td>E06563 - Suzanna Calandrini Duarte</td><td><span class="tel">5548991166274</span></td><td>2. EM ATENDIMENTO</td><td>Bom dia Suzanna, tudo bem com você?</td><td class="num-d">28 d</td></tr><tr><td>E08108 - Rodrigo Norberto Marques Sereno</td><td><span class="tel">553199907455</span></td><td>2. EM ATENDIMENTO</td><td>Perfeito, vi aqui que vocês já realizaram o upgrade para Heineken no Open Bar. Nesse caso, podem desconsiderar essa ação, pois esse serviço vocês já garantiram </td><td class="num-d">28 d</td></tr><tr><td>E04736 - Poliana Cardoso Da Silva</td><td><span class="tel">5547992144162</span></td><td>3. ASSINATURA E PAGAMENTO</td><td>[áudio] Imagina, Pauli, eu vou te transferir ali pro financeiro pra ver se ficou tudo certinho, tá? Porque eu não consigo ter acesso aqui a essa programação fin</td><td class="num-d">28 d</td></tr><tr><td>E07270 - Aline</td><td><span class="tel">5551999016163</span></td><td>1. ENTRADA</td><td>Obrigado Aline. Vou transferir o chamado para nossa equipe organizacional novamente!</td><td class="num-d">27.9 d</td></tr><tr><td>E07668 - Fernando Santana</td><td><span class="tel">5548991797972</span></td><td>2. EM ATENDIMENTO</td><td></td><td class="num-d">27.9 d</td></tr></tbody>
+</table></div>
+
+<h2><span class="num">4</span> Os casos da semana</h2>
+<p class="sub">Situação → o que foi feito → a técnica que se aplica → a fala pronta.</p>
+<div class="caso">
+  <div class="cab"><h3>Caso 1 · Priscilla — contradição de venda sobre banda sem resposta</h3></div>
+  <p class="hist">A Priscilla acessou o app, viu dois documentos pendentes de assinatura e percebeu que um deles proíbe banda, sendo que o vendedor teria prometido na contratação que ela poderia ter banda e que o salão escolhido era o mais indicado para isso. Ela levantou a contradição em 02/09 e a conversa parou ali, sem resposta do time. <span class="tel">554891182507</span></p>
+  <div class="fala"><span class="quem">O que aconteceu</span>A cliente escreveu: &quot;acessei o aplicativo agora e vi que possuo 2 documentos pendentes de assinatura. Vi que em um deles consta expressamente a proibição de banda. Ocorre que no me momento da contratação o representante me informou que seria possível. Incluse informou que o salão escolhido sério o mais recomendado para colocar a banda&quot;. Nenhuma resposta veio depois disso, e ainda havia dias úteis (02, 03 e 04/09) antes do fim de semana.</div>
+  <div class="perigo">Erro grave pela régua 5: reclamação e contradição sobre o que já foi contratado sobem ao topo na mesma hora. Aqui é pior, porque toca em promessa de venda e pode virar pedido de cancelamento ou disputa. Deixar sem resposta com dois documentos pendentes é empurrar a cliente para não assinar nada e para a desconfiança.</div>
+  <div class="fala boa"><span class="quem">A fala pronta</span>&quot;Priscilla, obrigado por trazer isso e me desculpe pela demora. Enquanto essa questão da banda não estiver resolvida, você não precisa assinar nenhum dos dois documentos. Vou revisar hoje com o comercial o que foi combinado na sua contratação e te retorno por escrito ainda hoje. Pra eu agilizar: em qual salão está seu evento e você lembra o nome do representante que te atendeu?&quot;</div>
+</div><div class="caso">
+  <div class="cab"><h3>Caso 2 · Jussara — R$ 19.641 travados por e-mail que não abre</h3><span class="val">R$ 19.641</span></div>
+  <p class="hist">A Jussara fechou verbalmente dois aditivos (adicional de convidados e o do DJ com o bolo, ADT26249 de R$ 14.291 e ADT26250 de R$ 5.350). Ela avisou que o e-mail dela não abre e que o marido, que assinaria, estava doente. O time seguiu enviando por e-mail. Os dois aditivos estão parados há 26 e 27 dias e a cliente falou por último há quase 7 dias sem retorno. <span class="tel">554888728986</span></p>
+  <div class="fala"><span class="quem">O que aconteceu</span>A cliente foi explícita sobre o canal: &quot;O e-mail eu não consigo abrir, lembra que o meu não abre?&quot;, e mesmo assim a formalização continuou dependendo do e-mail com &quot;Jussara enviei o aditivo para formalizar&quot;. Não foi enviado o link direto de assinatura pela conversa.</div>
+  <div class="alerta">R$ 19.641 fechados na conversa e presos por atrito de canal. O time já sabe a solução: foi o que o Arnaldo fez com a Carolina Cassol pelo link direto. É a régua 7 aplicada ao canal, e não ao interlocutor: quando a via trava, muda a via, não repete o template.</div>
+  <div class="fala boa"><span class="quem">A fala pronta</span>&quot;Jussara, como seu e-mail não abre, nem vou depender dele. Vou te mandar aqui pelo WhatsApp o link direto de assinatura dos dois aditivos, é só clicar e assinar pelo celular. Assim que você e o Eduardo assinarem, eu já dou baixa. Consegue ainda hoje, quando ele estiver melhor?&quot;</div>
+</div><div class="caso">
+  <div class="cab"><h3>Caso 3 · Karoliny — sinal de compra de drinks ignorado</h3><span class="val">R$ 6.000</span></div>
+  <p class="hist">A Karoliny disse em áudio que ficou com o coração apertado por não ter fechado os drinks e que tinha mais duas ou três coisas que gostaria de fechar. A conversa então girou toda em torno da taxa de alteração de data, os drinks e o doce nunca foram retomados, e ela já tem um aditivo de R$ 6.000 parado na assinatura. A nota interna do próprio time dizia &quot;verificar o que podemos conceder de cortesia&quot;. <span class="tel">554884764645</span></p>
+  <div class="fala"><span class="quem">O que aconteceu</span>Diante do pedido de compra, a resposta foi de disponibilidade passiva: &quot;Fico feliz que conseguiram resolver e sigo à disposição caso surja alguma dúvida ou necessidade&quot;. O desejo pelos drinks, dito pela própria cliente, não virou proposta.</div>
+  <div class="alerta">É a régua 9 ao contrário. A cliente entregou o que quer comprar, e o aditivo bom é justamente esse. Ficar à disposição no lugar de montar a proposta é deixar dinheiro que ela mesma pediu na mesa, e ainda contraria a régua 4, que manda toda mensagem terminar em próximo passo.</div>
+  <div class="fala boa"><span class="quem">A fala pronta</span>&quot;Karol, você comentou que ficou com vontade de fechar os drinks e mais umas duas ou três coisas, e é nisso que quero te ajudar. Separei uma condição pros drinks pensando no orçamento que vocês tinham. Quer que eu monte a proposta dos drinks e do doce pra você olhar hoje?&quot;</div>
+</div><div class="caso">
+  <div class="cab"><h3>Caso 4 · Carolina Cassol — link direto fechou o aditivo</h3></div>
+  <p class="hist">A Carolina fechou o aditivo verbalmente, mas o documento não chegava no e-mail nem na caixa de spam, e ela tinha tido o mesmo problema antes. Em vez de insistir no e-mail ou remarcar, o Arnaldo mandou o link direto de assinatura pela conversa e o aditivo (ADT-2026-124698) foi assinado na hora. <span class="tel">5548999737263</span></p>
+  <div class="fala"><span class="quem">O que aconteceu</span>Trocou o canal na hora e conduziu passo a passo: &quot;clica nesse link aqui que ele vai te direcionar pra te fazer a assinatura, tá bom?&quot;, seguido de &quot;Deu certo?&quot;, e a cliente respondeu &quot;Feito&quot;.</div>
+  <div class="ok">Acerto que resolve o gargalo do time. Aditivo aprovado só conta quando assinado (régua 3), e o atrito mais comum aqui é o canal de assinatura. Este é o padrão a copiar para as 35 contas paradas, a começar pela Jussara.</div>
+  <div class="fala boa"><span class="quem">A fala pronta</span>&quot;Carol, pra não depender do e-mail que às vezes trava, te mandei o link direto de assinatura aqui pela conversa. É só clicar e assinar pelo celular. Deu certo por aí?&quot;</div>
+</div><div class="caso">
+  <div class="cab"><h3>Caso 5 · Matheus Inumaro — mudança de data conduzida até o aditivo</h3></div>
+  <p class="hist">O Matheus passou por uma mudança de data e de espaço, com adicional de convidados, troca de open bar, troca de menu e horas extras. O Wyllian formalizou tudo em um único aditivo, conseguiu abater R$ 1.000 do saldo final e fechou com o casal assinando o documento e agradecendo o suporte. <span class="tel">5547996891804</span></p>
+  <div class="fala"><span class="quem">O que aconteceu</span>Depois de assinado, ancorou a relação sem empurrar nada: &quot;Sei que não foi simples lidar com essa mudança de data e de espaço, envolvendo fornecedores, convidados e tantos detalhes, mas vocês conduziram tudo com muita organização e transparência&quot;. O cliente respondeu com um agradecimento longo.</div>
+  <div class="ok">Acerto de pós-venda de risco: cliente que poderia cancelar por causa de mudança de data virou aditivo assinado e conta satisfeita. O que faltou foi só amarrar o próximo passo com data, para a reunião final não ficar solta (régua 10).</div>
+  <div class="fala boa"><span class="quem">A fala pronta</span>&quot;Matheus, obrigado pela confiança de vocês nesse processo de mudança de data e espaço. Está tudo formalizado e vou dar baixa amanhã cedo com o financeiro. Posso já deixar agendada sua reunião final de cardápio com a nossa equipe?&quot;</div>
+</div>
+
+<h2><span class="num">5</span> O aditivo — o resultado do time</h2>
+<h3>Quem fez o quê no time</h3>
+<p class="sub">Conversa vem do chat, aditivo vem do CRM. Não é ranking: é para saber onde a conversa aconteceu e onde o aditivo travou.</p>
+<div class="tabela-scroll"><table>
+<thead><tr><th>Pessoa</th><th class="num-d">Mensagens<br>na semana</th><th class="num-d">Conversas<br>30 dias</th><th class="num-d">Aditivos<br>criados</th><th class="num-d">Assinados</th><th class="num-d">Valor<br>assinado</th><th class="num-d">Aprovado sem<br>assinatura</th></tr></thead>
+<tbody><tr>
+  <td>Wyllian</td>
+  <td class="num-d">628</td>
+  <td class="num-d">197</td>
+  <td class="num-d">103</td>
+  <td class="num-d">30</td>
+  <td class="num-d">R$ 164.123</td>
+  <td class="num-d">R$ 26.619</td>
+</tr><tr>
+  <td>Beatriz <span class="etiq">inativa</span></td>
+  <td class="num-d">46</td>
+  <td class="num-d">118</td>
+  <td class="num-d">41</td>
+  <td class="num-d">10</td>
+  <td class="num-d">R$ 50.088</td>
+  <td class="num-d">R$ 42.586</td>
+</tr><tr>
+  <td>Arnaldo <span class="etiq">saiu do time</span></td>
+  <td class="num-d">81</td>
+  <td class="num-d">180</td>
+  <td class="num-d">140</td>
+  <td class="num-d">21</td>
+  <td class="num-d">R$ 79.346</td>
+  <td class="num-d">R$ 63.974</td>
+</tr></tbody>
+</table></div>
+<p class="sub">⚠️ Quem saiu do time no meio da janela continua na tabela de propósito: o trabalho feito por essa pessoa nos 30 dias é do time e sumiria da conta se fosse retirado.</p>
+<h3>Aditivo aprovado esperando assinatura</h3>
+<p class="sub">O trabalho já foi feito: a proposta existe, foi aprovada e o cliente não assinou. É o dinheiro mais perto de entrar que o time tem.</p>
+<div class="tabela-scroll"><table>
+<thead><tr><th>Cliente</th><th>Telefone</th><th class="num-d">Valor</th><th>Evento</th><th>Quem montou</th><th class="num-d">Parado</th></tr></thead>
+<tbody><tr>
+  <td>Anderson Duarte Tavares dos Santos<br><span class="legenda">ADT26265</span></td>
+  <td><span class="tel">+554797737620</span></td>
+  <td class="num-d">R$ 17.198</td>
+  <td>13/05/2028</td>
+  <td>Beatriz</td>
+  <td class="num-d">28 d</td>
+</tr><tr>
+  <td>Jussara Etelvina Ramos<br><span class="legenda">ADT26249</span></td>
+  <td><span class="tel">+554888728986</span></td>
+  <td class="num-d">R$ 14.291</td>
+  <td>12/11/2026</td>
+  <td>Wyllian</td>
+  <td class="num-d">27 d</td>
+</tr><tr>
+  <td>Andressa de Souza Pereira<br><span class="legenda">ADT26490</span></td>
+  <td><span class="tel">+5547997861927</span></td>
+  <td class="num-d">R$ 10.125</td>
+  <td>17/12/2027</td>
+  <td>Arnaldo</td>
+  <td class="num-d">9 d</td>
+</tr><tr>
+  <td>Renato da Gama<br><span class="legenda">ADT26202</span></td>
+  <td><span class="tel">5548984536316</span></td>
+  <td class="num-d">R$ 9.576</td>
+  <td>13/09/2026</td>
+  <td>Beatriz</td>
+  <td class="num-d">29 d</td>
+</tr><tr>
+  <td>Gustavo pereira Marazzi<br><span class="legenda">ADT26304</span></td>
+  <td><span class="tel">+554892043785</span></td>
+  <td class="num-d">R$ 6.864</td>
+  <td>19/09/2026</td>
+  <td>Arnaldo</td>
+  <td class="num-d">23 d</td>
+</tr><tr>
+  <td>Karoliny Gorges<br><span class="legenda">ADT26228</span></td>
+  <td><span class="tel">+554884764645</span></td>
+  <td class="num-d">R$ 6.000</td>
+  <td>21/04/2027</td>
+  <td>Beatriz</td>
+  <td class="num-d">27 d</td>
+</tr><tr>
+  <td>Carolina Cassol Bainha<br><span class="legenda">ADT26423</span></td>
+  <td><span class="tel">5548999737263</span></td>
+  <td class="num-d">R$ 5.757</td>
+  <td>06/03/2027</td>
+  <td>Arnaldo</td>
+  <td class="num-d">16 d</td>
+</tr><tr>
+  <td>Luiza Fernanda Micoski Beppler<br><span class="legenda">ADT26345</span></td>
+  <td><span class="tel">+5547999260690</span></td>
+  <td class="num-d">R$ 5.580</td>
+  <td>12/06/2027</td>
+  <td>Arnaldo</td>
+  <td class="num-d">21 d</td>
+</tr><tr>
+  <td>Jussara Etelvina Ramos<br><span class="legenda">ADT26250</span></td>
+  <td><span class="tel">+554888728986</span></td>
+  <td class="num-d">R$ 5.350</td>
+  <td>12/11/2026</td>
+  <td>Wyllian</td>
+  <td class="num-d">26 d</td>
+</tr><tr>
+  <td>Daniele Fernanda Prigol Feller<br><span class="legenda">ADT26469</span></td>
+  <td><span class="tel">5547992375552</span></td>
+  <td class="num-d">R$ 5.231</td>
+  <td>28/11/2026</td>
+  <td>Arnaldo</td>
+  <td class="num-d">13 d</td>
+</tr><tr>
+  <td>Jussara Etelvina Ramos<br><span class="legenda">ADT26163</span></td>
+  <td><span class="tel">+554888728986</span></td>
+  <td class="num-d">R$ 5.000</td>
+  <td>12/11/2026</td>
+  <td>Wyllian</td>
+  <td class="num-d">29 d</td>
+</tr><tr>
+  <td>Matheus Alexandre Rebelo<br><span class="legenda">ADT26275</span></td>
+  <td><span class="tel">+554799191953</span></td>
+  <td class="num-d">R$ 4.560</td>
+  <td>08/05/2027</td>
+  <td>Arnaldo</td>
+  <td class="num-d">22 d</td>
+</tr><tr>
+  <td>Priscilla Cechet Martins Capistrano<br><span class="legenda">ADT26312</span></td>
+  <td><span class="tel">+5548991182507</span></td>
+  <td class="num-d">R$ 4.393</td>
+  <td>15/10/2027</td>
+  <td>Arnaldo</td>
+  <td class="num-d">22 d</td>
+</tr><tr>
+  <td>Emerson Rodrigo Steffen<br><span class="legenda">ADT26274</span></td>
+  <td><span class="tel">+554788457844</span></td>
+  <td class="num-d">R$ 4.166</td>
+  <td>09/09/2028</td>
+  <td>Arnaldo</td>
+  <td class="num-d">22 d</td>
+</tr><tr>
+  <td>Josiane Aparecida Machado Da Cunha<br><span class="legenda">ADT26288</span></td>
+  <td><span class="tel">5548984963395</span></td>
+  <td class="num-d">R$ 4.077</td>
+  <td>10/10/2026</td>
+  <td>Arnaldo</td>
+  <td class="num-d">22 d</td>
+</tr></tbody>
+</table></div>
+<p><b>Total aprovado sem assinatura: R$ 133.179</b> em 35 aditivos.</p>
+<p class="sub">Além desses, <b>181</b> aditivos seguem em <b>rascunho</b> — nem chegaram a ser aprovados. E <b>111</b> do período são de redução ou troca de data (valor negativo), que não contam como venda e ficam fora de todas as somas acima.</p>
+
+<h2><span class="num">6</span> O que fazer agora</h2>
+<h3>Clientes da casa esperando resposta</h3>
+<div class="tabela-scroll"><table>
+<thead><tr><th>Cliente</th><th>Telefone</th><th>Última coisa que ele disse</th><th class="num-d">Esperando</th></tr></thead>
+<tbody><tr><td>E06158 - Carlos Eduardo Travesso Ribeiro <span class="etiq">já assinou</span></td><td><span class="tel">5547991552932</span></td><td>Obg</td><td class="num-d">27.8 d</td></tr><tr><td>E05661 - Josiane Aparecida Machado Da Cunha <span class="etiq">já assinou</span></td><td><span class="tel">5548984963395</span></td><td>Obrigada pelo lembrete</td><td class="num-d">26.1 d</td></tr><tr><td>Beatriz Vogel</td><td><span class="tel">554796054770</span></td><td>[Sticker]</td><td class="num-d">25.8 d</td></tr><tr><td>E06932 - Analu Salmoria <span class="etiq">já assinou</span></td><td><span class="tel">554796002770</span></td><td>Muito obrigada!!</td><td class="num-d">21.8 d</td></tr><tr><td>E07302 - Thaise Patricia Fiedler Timm <span class="etiq">já assinou</span></td><td><span class="tel">5547991176821</span></td><td>Boa semana a vcs! Deus continue abençoando as vendas</td><td class="num-d">21.8 d</td></tr><tr><td>E07367 - JONATAS E DAIANE <span class="etiq">já assinou</span></td><td><span class="tel">554899471266</span></td><td>Sobre o pacote promocional, pedi pra minha gestora as informações que eu poderia te repassar, porque os detalhes mais minuciosos realmente são o espec</td><td class="num-d">21 d</td></tr><tr><td>E08309 - Izelda <span class="etiq">já assinou</span></td><td><span class="tel">554796162037</span></td><td>A Exatus Engenharia Ambiental e Alimentos Ltda agradece seu contato. Como podemos ajudar?</td><td class="num-d">21 d</td></tr><tr><td>E06189 - Stefany Pergentino Dos Santos <span class="etiq">já assinou</span></td><td><span class="tel">5547992221999</span></td><td>Ta bomm, obrigada!</td><td class="num-d">18.9 d</td></tr><tr><td>E06695 - Debora Bernardo Correa <span class="etiq">já assinou</span></td><td><span class="tel">5548999882701</span></td><td>Imagina!</td><td class="num-d">18.8 d</td></tr><tr><td>E08194 - Jéssica Eger <span class="etiq">já assinou</span></td><td><span class="tel">554884852748</span></td><td>Certo, obrigada</td><td class="num-d">18.7 d</td></tr><tr><td>E07412 - Natalya Sophia <span class="etiq">já assinou</span></td><td><span class="tel">5547997372442</span></td><td>Pode encerrar</td><td class="num-d">17.8 d</td></tr><tr><td>E06923 - Carlos Victor Farias Paiva <span class="etiq">já assinou</span></td><td><span class="tel">5592981886020</span></td><td>Já está assinado</td><td class="num-d">17.6 d</td></tr><tr><td>E08452 - Andre <span class="etiq">já assinou</span></td><td><span class="tel">554796368528</span></td><td>blz</td><td class="num-d">14.9 d</td></tr><tr><td>Jana🥂</td><td><span class="tel">554884740811</span></td><td>Obrigada</td><td class="num-d">14.8 d</td></tr><tr><td>José Fernando Rosa</td><td><span class="tel">5547991596584</span></td><td>Beleza</td><td class="num-d">14 d</td></tr><tr><td>E08460 - Jéssica Melo <span class="etiq">já assinou</span></td><td><span class="tel">554792642778</span></td><td>Gostaria de verificar com vocês, minha sogra é deficiente auditiva, vocês disponibilizam interprete para o momento da cerimônia ?</td><td class="num-d">14 d</td></tr><tr><td>E08233 /Juliana &amp; Vitor / Celebration</td><td><span class="tel">554792852854</span></td><td>Obrigada também</td><td class="num-d">13.9 d</td></tr><tr><td>E08492 - Emerson <span class="etiq">já assinou</span></td><td><span class="tel">554788457844</span></td><td>Obrigado</td><td class="num-d">12.9 d</td></tr><tr><td>E08604 - Cheila <span class="etiq">já assinou</span></td><td><span class="tel">554792784236</span></td><td>Beleza!</td><td class="num-d">12.7 d</td></tr><tr><td>E08590 -Khafilayne Cavalcante <span class="etiq">já assinou</span></td><td><span class="tel">559284510009</span></td><td>Obrigadaaa</td><td class="num-d">11.9 d</td></tr></tbody>
+</table></div>
+<p class="sub">Outras <b>79</b> conversas apareceriam aqui, mas foram conferidas em todos os times do chat e <b>já haviam sido respondidas</b> por Pós-Vendas, Financeiro ou Pré-Vendas em outro ticket do mesmo cliente — não entram como pendência dela.</p>
+
+<h3>Leads novos que não receberam uma palavra humana</h3>
+<div class="tabela-scroll"><table>
+<thead><tr><th>Cliente</th><th>Telefone</th><th>O que ele disse</th><th class="num-d">Mensagens</th></tr></thead>
+<tbody><tr><td>E08668 - Lari</td><td><span class="tel">554788938234</span></td><td>Gostaria de mudar o local do nosso casamento para o espaço cristal em Blumenau dia 13/02/2027</td><td class="num-d">1</td></tr><tr><td>E08657 - Talita Rodrigues</td><td><span class="tel">554791596258</span></td><td>Obrigada</td><td class="num-d">1</td></tr><tr><td>E08673 - Maria</td><td><span class="tel">5548991993865</span></td><td>Poderia retornar ?</td><td class="num-d">1</td></tr></tbody>
+</table></div>
+
+<h2><span class="num">7</span> Os ajustes da semana</h2>
+<div class="tabela-scroll"><table>
+<thead><tr><th>Ajuste</th><th>Por que</th><th>Como fica na prática</th></tr></thead>
+<tbody><tr><td><b>Reclamação, contradição de venda e pedido de cancelamento entram na frente de tudo, no mesmo dia útil.</b></td><td>A Priscilla apontou uma promessa de venda contrariada e ficou dias sem resposta, e as notas registram a Daniela Carvalho pedindo cancelamento e a Jessica querendo verificar cancelamento. É a régua 5, e cada uma dessas é risco de perder o contrato inteiro, não só o aditivo.</td><td>Toda conversa com as palavras cancelar, reclamação, prometeram, advogado ou desconto sobre o já contratado é respondida em primeiro lugar, com posição por escrito ou prazo dado e cumprido.</td></tr><tr><td><b>Puxar os aditivos parados pela data do evento, não pela ordem em que foram criados.</b></td><td>Há R$ 133.179 em 35 aditivos parados, e o do Renato (R$ 9.576, evento 13/09) e o do Gustavo (R$ 6.864, evento 19/09) estão dentro da janela de produção. É a régua 6: perto do evento a produção não entra mais e o aditivo morre sozinho.</td><td>A fila de cobrança de assinatura é ordenada por proximidade do evento. O que tem evento nas próximas semanas é cobrado hoje, com a urgência dita de forma honesta.</td></tr><tr><td><b>Quando o e-mail não abre ou o documento não chega, trocar o canal de assinatura na hora.</b></td><td>A Jussara tem R$ 19.641 travados só por isso, e o próprio time já resolveu o mesmo problema com a Carolina Cassol usando o link direto. Repetir o e-mail que a cliente disse que não abre é insistir na via quebrada.</td><td>Diante de qualquer sinal de que o e-mail travou, o padrão vira o link direto de assinatura enviado pela conversa, com pedido de confirmação assim que assinar.</td></tr><tr><td><b>Todo sinal de compra dito pelo cliente vira proposta antes de qualquer promoção de campanha.</b></td><td>A Karoliny disse que queria fechar os drinks e o doce e recebeu apenas disponibilidade passiva. O disparo de campanha o time já faz bem; o que escapa é o aditivo que o próprio cliente pediu na conversa (régua 9).</td><td>Quando o cliente cita um item que gostaria de ter fechado, a resposta seguinte já traz proposta ou condição para aquele item, com pergunta de fechamento.</td></tr><tr><td><b>Não encerrar chamado com pergunta do cliente em aberto.</b></td><td>Com a Karoliny e a Priscilla a intenção de encerrar apareceu enquanto ainda havia dúvida ou pedido sem resposta. Encerrar assim contraria a régua 4 e passa a sensação de conta abandonada.</td><td>Antes de encerrar, revisar se toda pergunta foi respondida item a item por escrito. Se houver algo aberto, responde primeiro e só depois pergunta se pode encerrar.</td></tr><tr><td><b>Toda proposta ou aditivo enviado ganha confirmação de recebimento e um próximo passo com data.</b></td><td>São 284 aditivos criados no mês para 61 assinados e 181 em rascunho. Enviar não é fechar, e proposta sem cobrança de retorno vira rascunho parado.</td><td>Depois de enviar, confirmar se o cliente recebeu e combinar quando ele dá o retorno. No prazo combinado, a cobrança da assinatura já entra agendada.</td></tr></tbody>
+</table></div>
+
+<div class="rodape">
+  Análise gerada em 08/09/2026 sobre o banco do IndaChat (tickets, mensagens e notas do time PÓS VENDAS [Time 2] atribuídos a Pós-Vendas · Time 2) e o CRM de produção.
+  Janela de ação: 01/09/2026 a 08/09/2026. Janela de comportamento: 30 dias.
+  
+  <br>Página interna, atualizado em 08/09/2026. Não indexada: o endereço é o único controle de acesso.
+</div>
+
+</div>
+</body>
+</html>
