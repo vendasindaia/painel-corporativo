@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
 <meta name="referrer" content="no-referrer">
-<title>Daiane — análise do atendimento · 28/09/2026 a 05/10/2026</title>
+<title>Daiane — análise do atendimento · 05/10/2026 a 12/10/2026</title>
 <style>
   :root{--roxo:#6d28d9;--roxo-claro:#f3eefe;--tinta:#1e1b2e;--cinza:#6b6580;--fundo:#faf9fc;--card:#fff;--borda:#e8e4f1;
         --verde:#0e7c4f;--verde-claro:#e7f6ee;--ambar:#92610a;--ambar-claro:#fdf3dd;--verm:#b3213b;--verm-claro:#fdecef}
@@ -59,9 +59,9 @@
 
 <header>
   <div class="wrap">
-    <span class="tag">Recovery · 28/09/2026 a 05/10/2026</span>
+    <span class="tag">Recovery · 05/10/2026 a 12/10/2026</span>
     <h1>Daiane Bortoli — análise do atendimento</h1>
-    <p>0 conversas com movimento em 5 dias de atendimento, 0 mensagens dela lidas uma a uma
+    <p>0 conversas com movimento em 4 dias de atendimento, 0 mensagens dela lidas uma a uma
     (texto e áudio transcrito), 0 notas internas. O que segue não é ranking: é o que dá para melhorar amanhã,
     com nome, telefone e a frase pronta.</p>
   </div>
@@ -70,11 +70,11 @@
 <div class="wrap">
 
 <h2><span class="num">1</span> A leitura em um minuto</h2>
-<p>Não há o que elogiar com número nesta janela porque não há número: todo o volume veio zerado — carteira 0, ativas30 0, ativas7 0, msgsDela7 0, msgsDela30 0 — e o array de diálogos chegou vazio. O contexto do negócio descreve uma Daiane rápida (mediana de 11 minutos, 792 respostas no mês) e que registra o motivo da perda, mas nada disso aparece nos dados exportados deste período. Sem uma única conversa capturada, não dá para confirmar nenhum acerto com citação, que é o que este relatório exige.</p><p>O gargalo real desta semana não é de técnica de atendimento, é de dado: carteira 0 somada a diálogos vazios significa uma de duas coisas — ou ela não teve nenhum lead de Recovery atribuído na janela, ou a coleta falhou e não trouxe as conversas. Nos dois cenários é impossível medir o indicador dela, que é a segunda tentativa (tentativas 0, destravou 0) e a reunião marcada (reuniao.convs 0, online.convs 0). A janela teve 5 dias úteis em 7 corridos (2026-10-04 e 2026-10-03 com a casa fechada), mas mesmo descontando isso o zero é total, não um zero de fim de semana.</p><p>Nada consta como parado: totalParado 0, dinheiroParado vazio, nenhum contrato e nenhum pendente registrado. Isso não quer dizer que o funil está limpo — quer dizer que não há dinheiro visível para somar porque não há conversa para olhar. O custo aqui é cego: não sei quanto está em risco porque a base não veio.</p>
+<p>Não há o que elogiar com número nesta janela porque não há número: carteira, ativas, atendidas, mensagens dela e do cliente, notas e segundas tentativas estão todos zerados, e a lista de DIÁLOGOS REAIS chegou vazia. A semana teve 4 dias úteis em 7 corridos (2026-10-10, 11 e 12 foram fim de semana ou feriado, casa fechada), então o silêncio desses três dias não conta como abandono — mas isso explica no máximo 3 dias, não a ausência total de registro.</p><p>O gargalo aqui não é de atendimento, é de dado: não chegou nenhuma conversa, nenhuma mensagem e nenhuma nota para analisar. Sem diálogo não dá para medir CTA na última linha, resposta de preço, oferta de reunião online, troca de interlocutor em conta parada nem nada da régua da casa. Qualquer caso, citação ou ponto forte que eu escrevesse aqui seria inventado, e a instrução é clara: não inventar cliente, telefone, valor nem fala.</p><p>Nada parado para cobrar porque nada entrou: dinheiroParado está vazio e totalParado é zero. O que está 'parado' é a própria coleta — vale checar se a extração puxou a pessoa e o período certos antes de rodar de novo, porque do jeito que veio não há base para o relatório.</p>
 
 <div class="metodo">
-<b>Esta semana teve 5 dias de atendimento, não 7.</b>
-04/10, 03/10 foram fim de semana ou feriado, com a casa fechada — o volume desta semana
+<b>Esta semana teve 4 dias de atendimento, não 7.</b>
+12/10, 11/10, 10/10 foram fim de semana ou feriado, com a casa fechada — o volume desta semana
 não se compara direto com o de uma semana cheia, e o silêncio desses dias não conta contra ninguém.<br>
 <b>Como foi apurado.</b> Duas janelas, de propósito: as <b>listas de ação</b> e os casos olham os últimos <b>7 dias</b>;
 os <b>indicadores de comportamento</b> olham <b>30 dias</b>, porque em uma semana não há amostra suficiente para
@@ -111,14 +111,14 @@ ter ticket em vários times, e a resposta pode ter saído pelo Pós-Vendas ou pe
 <h2><span class="num">6</span> Os ajustes da semana</h2>
 <div class="tabela-scroll"><table>
 <thead><tr><th>Ajuste</th><th>Por que</th><th>Como fica na prática</th></tr></thead>
-<tbody><tr><td><b>Confirmar se a carteira zerada é real ou falha de exportação, antes de qualquer feedback de atendimento</b></td><td>carteira 0, ativas30 0 e diálogos vazios travam o relatório inteiro; julgar qualidade sem conversa seria inventar</td><td>Rodar a coleta de novo para a janela e verificar: ela teve zero leads de Recovery atribuídos, ou as conversas existiram e não foram capturadas?</td></tr><tr><td><b>Se a carteira estava mesmo vazia, revisar a distribuição de leads para o Recovery no período</b></td><td>reativação sem base atribuída não gera segunda tentativa — e segunda tentativa é justamente o indicador dela</td><td>Checar se o fluxo de leads frios/perdidos chegou a cair para a fila dela nos 5 dias úteis da janela.</td></tr><tr><td><b>Repetir esta análise só quando houver ao menos uma conversa com diálogo capturado</b></td><td>qualidade de atendimento só se avalia sobre conversa real; sem diálogo não há citação e sem citação não há caso</td><td>Agendar a reexecução para depois que a coleta trouxer diálogos, não sobre o export vazio atual.</td></tr><tr><td><b>Fixar o aviso de dias úteis em qualquer comparação de volume desta janela</b></td><td>a semana teve 5 dias úteis em 7, com 2026-10-04 e 2026-10-03 fechados; comparar com semana cheia sem isso distorce</td><td>Toda leitura de volume deste período declara os 2 dias sem atendimento antes de confrontar com outra semana.</td></tr></tbody>
+<tbody><tr><td><b>Refazer a extração dos dados da Daiane para esta janela antes de gerar o relatório.</b></td><td>Todos os contadores vieram zerados e a lista de diálogos veio vazia; sem isso não há o que avaliar e qualquer análise seria fabricada.</td><td>Confirmar período (7 dias corridos até 2026-10-12, 4 úteis), confirmar que o identificador da Daiane no Recovery está certo e rodar a coleta de novo; se continuar zerado, o problema é na origem, não no atendimento.</td></tr><tr><td><b>Validar se os 3 dias sem atendimento explicam todo o vazio ou só parte dele.</b></td><td>2026-10-10, 11 e 12 foram casa fechada, mas sobram dias úteis na janela que deveriam ter movimento.</td><td>Olhar dia a dia 2026-10-06 a 2026-10-09: se nesses dias úteis também não há nenhuma mensagem, é falha de captura, não semana fraca.</td></tr></tbody>
 </table></div>
 
 <div class="rodape">
-  Análise gerada em 05/10/2026 sobre o banco do IndaChat (tickets, mensagens e notas do time Recovery  atribuídos a Daiane Bortoli).
-  Janela de ação: 28/09/2026 a 05/10/2026. Janela de comportamento: 30 dias.
+  Análise gerada em 12/10/2026 sobre o banco do IndaChat (tickets, mensagens e notas do time Recovery  atribuídos a Daiane Bortoli).
+  Janela de ação: 05/10/2026 a 12/10/2026. Janela de comportamento: 30 dias.
   
-  <br>Página interna, atualizado em 05/10/2026. Não indexada: o endereço é o único controle de acesso.
+  <br>Página interna, atualizado em 12/10/2026. Não indexada: o endereço é o único controle de acesso.
 </div>
 
 </div>
